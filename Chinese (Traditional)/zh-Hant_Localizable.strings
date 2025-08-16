@@ -1,0 +1,1952 @@
+/*
+
+  Localizable.strings
+  Amphetamine
+
+  Created by William Gustafson on 2/21/20.
+  Copyright © 2023 William C. Gustafson. All rights reserved.
+
+
+ ⭐️⭐️⭐️ ⭐️⭐️⭐️ ⭐️⭐️⭐️ ⭐️⭐️⭐️ ⭐️⭐️⭐️ ⭐️⭐️⭐️
+
+  ❗️❗️ GUIDELINES PART 1; PLEASE READ ❗️❗️
+
+ ⭐️⭐️⭐️ ⭐️⭐️⭐️ ⭐️⭐️⭐️ ⭐️⭐️⭐️ ⭐️⭐️⭐️ ⭐️⭐️⭐️
+
+
+ Hi there!
+
+ First off, THANK YOU for helping with translating Amphetamine into another language. I have chosen to give Amphetamine away for free, and thus, do not have the resources to hire a professional company to do this work. Thousands of people around the world use Amphetamine but certainly, if one is not a native English speaker, it must be difficult to use the more advanced features.
+
+ Before getting started, PLEASE read through the guidelines below. If you have any questions/run into trouble, please submit a support request at iffy.freshdesk.com.
+
+ Lastly, the text that needs translating in this file is ONLY on the right side of the equals sign.
+
+ -----------------------------------------------------------------------------------------------
+ EXAMPLE: "gen_use_end_session_cap" = "End Session";
+
+ • "gen_use_end_session_cap" is a unique key. Please do not change any of the unique keys.
+ • "End Session" is the text that needs to be translated.
+ -----------------------------------------------------------------------------------------------
+
+ Make sure to never remove the quotation marks and leave each line ending with a semicolon character ';'
+
+ Thanks again!
+
+ - William Gustafson
+   Amphetamine Creator
+
+
+ ⭐️⭐️⭐️ ⭐️⭐️⭐️ ⭐️⭐️⭐️ ⭐️⭐️⭐️ ⭐️⭐️⭐️ ⭐️⭐️⭐️
+
+  ❗️❗️ GUIDELINES PART 2; PLEASE READ ❗️❗️
+
+ ⭐️⭐️⭐️ ⭐️⭐️⭐️ ⭐️⭐️⭐️ ⭐️⭐️⭐️ ⭐️⭐️⭐️ ⭐️⭐️⭐️
+
+
+ ###########################################################################
+ 1. PLACEHOLDERS
+ ###########################################################################
+
+ Throughout this file, you will see in many instances of what seem to be garbled text, or odd sets of characters.
+
+ -----------------
+ EXAMPLES:
+
+ • %@
+ • %li%%
+ • %.f
+ • \n\n
+ ... etc.
+ -----------------
+
+ If you're not a developer, these characters may seem like they don't belong and should be removed. However, these characters are __VERY__ important and should never be removed. These characters act as placeholders for other values/text.
+
+ -----------------------------------------------------
+ EXAMPLE: Placeholder '%@' equals "not connected"
+ • "Power adapter %@" → "Power adapter not connected"
+ -----------------------------------------------------
+
+ If you remove any of these placeholders, it will likely cause great confusion to Amphetamine's users. Please take extra special care to not accidentally remove any placeholders.
+
+ In some cases, you may need to move the location of the placeholder if its position in the target language is not grammatically correct.
+
+ -------------------------------------------------------
+ EXAMPLE: Placeholder '%@' equals the word "low"
+
+ • ENGLISH → "%@ battery" → "low battery"
+ • SPANISH → "batería %@" → "batería baja"
+ -------------------------------------------------------
+
+ I have tried to add comments where placeholders exist to indicate the expected value of the placeholder. I may have missed a few. Let me know if you find one.
+
+You should also take care to not remove any '\n' characters. Each '\n' represents a line break and each '\n\n' starts a new paragraph. This helps longer text be broken up and made easier to read. There should typically never be any whitespace/spaces before or after the \n character(s).
+
+ ------------------------------------------------------------------
+ EXAMPLE: This is some sample text\nshowing how a line break works.
+ ------------------------------------------------------------------
+
+ Notice how the '\n' placeholder in "text\nshowing" does not have any spaces around it? This is the correct format.
+
+
+ ###########################################################################
+ 2. PROPER NOUNS/CAPITALIZATION
+ ###########################################################################
+
+ • Amphetamine
+ Amphetamine is the name of the application and should always be capitalized as a proper noun. The word "Amphetamine" should never be translated to another language.
+
+ • Triggers
+ "Triggers" is a branded feature of Amphetamine. If possible, the term "Triggers" or "Trigger" should be translated as a proper noun, keeping its capitalization. If there is not a word in the target language that accurately represents the English word "Trigger(s)", please use a word that you feel best represents this feature. A possible English alternative could be something like "Automation".
+
+ • Quick Preferences
+ "Quick Preferences/Settings" is a branded feature of Amphetamine. The "Preferences/Settings" part of this feature should be translated to match macOS's default translation for this word in the target language. Capitalization of this feature should remain intact if possible. "Quick" should be translated to a word meaning fast/easy in the target language.
+
+ -------------------------------------------
+ EXAMPLE (SPANISH): "Preferencias Rápidas"
+ -------------------------------------------
+
+ • Drive Alive
+ Drive Alive is a branded feature of Amphetamine. While the target language's translation of this feature likely won't rhyme like it does in English, please be sure to keep the capitalization of this feature in place if possible.
+
+
+ ###########################################################################
+ 3. SARCASM/CHEEKINESS
+ ###########################################################################
+
+ In a few places, sarcasm is used, or Amphetamine appears to have a bit of a cheeky attitude. This type of humor may not translate well, and can be removed entirely if needed. Please replace the text you remove with a simple message that makes sense in the target language.
+
+ -------------------------------------------
+ EXAMPLE: See key "warn_diag_reset_conf_body"
+ -------------------------------------------
+
+
+ ###########################################################################
+ 4. IDIOMS
+ ###########################################################################
+
+ Some English phrases/idioms, may not make sense in other languages.
+
+ ----------------------------------------------------------------------
+ EXAMPLE: See "ww5_lbl_subtitle" = "Amphetamine is a labor of love."
+ ----------------------------------------------------------------------
+
+ The English idiom "labor of love" means "Work done for one's satisfaction rather than monetary reward."
+
+ If there is an idiom in the target language that has the same meaning, please feel free to substitute it. If no suitable idiom exists in the target language, please attempt to translate the English idiom's meaning as concisely as possible.
+
+
+ ###########################################################################
+ 5. CONCISENESS
+ ###########################################################################
+
+ Space is extremely limited in many parts of Amphetamine's user interface (UI). Being clear is greatly important, but conciseness is also critical. Without a doubt, some adjustments to Amphetamine's UI will be required to accommodate differences in word/sentence length across languages, but you can greatly reduce the number of adjustments needed by keeping your translation as concise as possible.
+
+*/
+
+// ---------------------------------------------------------------------------
+// BEGIN NEW STRINGS ADDED FOR v5.3
+"cdm_skip_script_button" = "略過";
+"cdm_remind_me_script_button" = "稍後提醒我";
+"cdm_anomaly_alert_ignore_button" = "忽略";
+
+"install_script_folder_prompt" = "選取應用程式工序指令";
+"install_script_message" = "請選取使用者→資源庫→Application Scripts→com.if.Amphetamine 資料夾";
+
+"install_script_success_title" = "工序指令已安裝";
+
+"install_cdm_script_success_message" = "啟用/停用睡眠工序指令已成功安裝。\n\n請結束目前的工作階段並啟動一個新的工作階段。";
+
+"install_script_error_title" = "工序指令未安裝";
+
+"install_cdm_script_error_message" = "發生錯誤。可能選取了錯誤的資料夾，或無法複製工序指令檔案。";
+
+"install_generic_script_success_message" = "工序指令已成功安裝。如果工作階段正在進行中，請結束目前的工作階段並啟動一個新的工作階段。";
+
+"alert_get_amph_enhancer_button_title_m_app" = "安裝程序探索工序指令";
+
+"help_app_picker_body_m" = "要在此列表中看到應用程式或程序，它必須正在執行。使用「不要顯示輔助應用程式和程序」核取方塊來篩選列表，以包含或排除輔助應用程式/程序。輔助應用程式和程序可能沒有使用者介面，且通常在背景中靜默執行。\n\n如果您在列表中沒有看到應用程式/程序，則它可能沒有在執行，或者Amphetamine被macOS的應用程式沙箱技術阻止觀察該應用程式/程序。要解決應用程式沙箱的限制，您需要安裝一個程序探索工序指令，該工序指令可以「看到」這些其他程序並將其回報給Amphetamine。\n\n如果您已安裝程序探索工序指令但仍未看到您想要的應用程式/程序，請等待最多10秒，然後點擊搜尋欄位右側的↻按鈕重新整理應用程式/程序列表。";
+
+"criterion_help_app_body_m" = "此條件只有在指定的應用程式或程序在您的Mac上執行時才會評估為真。\n\n要在此列表中看到應用程式或程序，它必須正在執行。使用「不要顯示輔助應用程式和程序」核取方塊來篩選列表，以包含或排除輔助應用程式/程序。輔助應用程式和程序可能沒有使用者介面，且通常在背景中靜默執行。\n\n如果您在列表中沒有看到應用程式/程序，則它可能沒有在執行，或者Amphetamine被macOS的應用程式沙箱技術阻止觀察該應用程式/程序。要解決應用程式沙箱的限制，您需要安裝一個程序探索工序指令，該工序指令可以「看到」這些其他程序並將其回報給Amphetamine。\n\n如果您已安裝程序探索工序指令但仍未看到您想要的應用程式/程序，請等待最多10秒，然後點擊搜尋欄位右側的↻按鈕重新整理應用程式/程序列表。";
+
+// END NEW STRINGS ADDED FOR v5.3
+// ---------------------------------------------------------------------------
+
+
+// ---------------------------------------------------------------------------
+// BEGIN NEW STRINGS ADDED FOR v5.3.1
+
+// GENERAL
+
+// NSMENU ITEM TITLE
+"uninstall_script_menu_item" = "解除安裝描述檔...";
+
+
+// POWER PROTECT
+"cdm_install_script_alert_title_new" = "您想安裝Power Protect嗎？";
+
+"cdm_install_script_alert_body_new" = "Power Protect可讓您在啟用「關閉顯示器模式」的工作階段期間，連接或斷開Apple Silicon Mac的電源轉換器或其他電源，例如具有供電功能的顯示器。\n\n您不需要在工作階段中使用Power Protect，但是，如果沒有Power Protect，在啟用「關閉顯示器模式」的工作階段期間連接或斷開Mac的電源轉換器或其他電源，您的Mac可能會立即進入睡眠模式。\n\n使用Power Protect需要在您的Mac上安裝一個描述檔和設定檔。系統會提示您使用Touch ID或您的管理員密碼來安裝設定檔。提示會顯示「osascript想要進行變更」。\n\n一旦安裝了設定檔，以下指令將不再需要密碼即可執行：\n\npmset -a disablesleep 1\npmset -a disablesleep 0\n\n其他通常需要Touch ID或管理員密碼才能執行的指令將保持不變。在此過程中，Amphetamine不會儲存或以其他方式儲存您的密碼或Touch ID資料。";
+
+"install_Power_Protect_success_title_new" = "Power Protect安裝\n步驟1/2完成";
+
+"install_Power_Protect_success_message_new" = "Power Protect描述檔已成功安裝。接下來，系統會提示您安裝Power Protect設定檔。\n\n出現提示時，請使用Touch ID或輸入您的管理員密碼。";
+
+"install_Power_Protect_error_title" = "Power Protect未安裝";
+"install_Power_Protect_error_message" = "發生錯誤。您必須選取~/Application Scripts/com.if.Amphetamine資料夾。\n\n請再試一次，或透過Amphetamine的選單列圖示→意見回饋與支援→聯絡支援人員尋求協助。";
+
+"power_protect_sudo_install_success_title" = "Power Protect已安裝";
+"power_protect_sudo_install_success_message" = "成功安裝Power Protect的設定檔和描述檔。\n\n如果工作階段正在進行中，請結束並重新啟動它。";
+
+"power_protect_sudo_install_fail_title" = "Power Protect未安裝";
+"power_protect_sudo_install_fail_message" = "安裝Power Protect設定檔失敗。\n\n請透過Amphetamine的選單→意見回饋與支援→聯絡支援人員。";
+
+"cdm_install_script_button" = "安裝";
+
+"cdm_script_fail_alert_title_new" = "Power Protect失敗";
+
+"cdm_script_fail_alert_body_enable_new" = "Amphetamine嘗試為「關閉顯示器模式」工作階段啟用Power Protect，但未成功。\n\n您的Mac在顯示器關閉時可能不會睡眠，但連接或斷開外部電源可能會導致您的Mac立即睡眠。\n\n要解決此問題，請嘗試結束目前的工作階段並啟動一個新的工作階段。\n\n如果問題仍然存在，請透過Amphetamine的選單→意見回饋與支援→聯絡支援人員。";
+
+"cdm_script_fail_alert_body_disable_new" = "Amphetamine嘗試停用Power Protect，但未成功。\n\n即使沒有進行中的工作階段，您的Mac可能仍在阻止睡眠。這可能導致意外的電池耗盡或過熱。\n\n當Amphetamine提示您解決此問題時，強烈建議您選擇「停用Power Protect」。";
+
+"cdm_anomaly_alert_title" = "Power Protect正在影響您Mac的睡眠設定";
+
+"cdm_anomaly_alert_body_new" = "目前沒有進行中的Amphetamine工作階段，但Power Protect已啟用並讓您的Mac保持喚醒。這可能導致意外的電池耗盡和/或過熱，尤其是在「關閉顯示器模式」下。\n\n要更正此問題，Amphetamine需要停用Power Protect，並在必要時重新安裝Power Protect。\n\n此問題可能是由於在啟用「關閉顯示器模式」的工作階段期間結束Amphetamine、在啟用「關閉顯示器模式」的工作階段期間Amphetamine當機，或有人手動停用您Mac上的睡眠所致。";
+
+"cdm_anomaly_alert_fix_button" = "停用Power Protect";
+
+"update_Power_Protect_title" = "Power Protect更新";
+"update_Power_Protect_message" = "Power Protect使用的描述檔需要更新。";
+
+"power_protect_update_script_button" = "更新"; // NSOPENPANEL BUTTON TITLE
+
+"update_Power_Protect_success_title" = "Power Protect已更新";
+"update_Power_Protect_success_message" = "請結束任何受Power Protect保護的工作階段並重新啟動它們。";
+
+"update_Power_Protect_error_title" = "Power Protect未更新";
+"update_Power_Protect_error_message" = "發生錯誤。您必須選取~/Application Scripts/com.if.Amphetamine資料夾。\n\n請重新啟動Amphetamine並再試一次，或透過Amphetamine的選單列圖示→意見回饋與支援→聯絡支援人員尋求協助。";
+
+
+// DEBUG MODE
+"debug_window_title" = "Amphetamine除錯主控台";
+"debug_column_header_souce" = "來源";
+"debug_column_header_time" = "時間";
+"debug_colum_header_message" = "訊息";
+
+"statbar_mi_debugMode" = "除錯模式...";
+"pref_debug_bttn_enable" = "啟用除錯模式";
+"debug_window_bttn_export" = "匯出日誌";
+"debug_window_clear_log" = "清除主控台";
+"debug_window_autoscroll_log" = "自動捲動"; // automatic scrolling
+
+"debug_mode_alert_title" = "除錯模式已啟用";
+"debug_mode_alert_body" = "除錯模式可能會影響Amphetamine的效能。\n\n若要停用除錯模式，請點擊選單列中的Amphetamine圖示，然後選擇「意見回饋與支援」→「除錯模式...」，然後取消勾選「啟用除錯模式」。";
+
+"debug_save_prompt" = "選擇儲存除錯模式日誌檔案的位置：";
+"debug_save_success_title" = "除錯日誌已匯出";
+"debug_save_success_message" = "成功儲存至%@"; // %@ will be the file path chosen by the user
+
+"debug_save_fail_title" = "匯出失敗";
+"debug_save_fail_message" = "請再試一次或選擇其他位置儲存檔案。";
+
+
+// LOCATION SERVICES FOR MACOS SONOMA
+"location_services_disabled" =  "定位服務未啟用";
+"locSrv_alert_title" = "Amphetamine需要定位服務存取權限";
+"locSrv_alert_message" = "從macOS 14 Sonoma開始，想要取得您WiFi網路名稱的應用程式必須獲得定位服務的存取權限。系統應該會提示您授予Amphetamine存取權限。\n\n如果沒有提示，請前往→系統設定→隱私權與安全性→定位服務，並授予Amphetamine存取權限。";
+
+
+// LAUNCH AT LOGIN
+"amp_install_path_alert_title" = "Amphetamine的家在「應用程式」";
+"amp_install_path_alert_message" = "為了讓Amphetamine的所有功能正常運作，它需要安裝在「應用程式」資料夾中。\n\n請結束Amphetamine並將其移至/Applications資料夾。某些功能（如「登入時啟動」）需要這樣做。";
+
+
+// ROSETTA 2 WARNING
+"rosetta_warn_title" = "Amphetamine正在使用Rosetta";
+"rosetta_warn_message" = "您有一部Apple Silicon Mac，但正在執行Intel版本的Amphetamine。\n\n這會導致Amphetamine的某些功能無法如預期般運作。\n\n要解決此問題，請使用Finder在「應用程式」資料夾中選取Amphetamine，然後從Finder的選單中選擇「檔案」→「取得資訊」。在出現的「Amphetamine資訊」視窗中，取消勾選標示為「使用Rosetta開啟」的方塊，然後結束並重新啟動Amphetamine。";
+
+
+// END NEW STRINGS ADDED FOR v5.3.1
+// ---------------------------------------------------------------------------
+
+
+// ---------------------------------------------------------------------------
+// GENERAL USE STRINGS
+
+// THE APP'S NAME, DON'T TRANSLATE
+"gen_use_app_name" = "Amphetamine";
+
+// THE NAME OF THE TARGET LANGUAGE
+// EXAMPLE: PUT "SPANISH" HERE IF YOU ARE TRANSLATING INTO THE SPANISH LANGUAGE
+ "gen_use_locale" = "繁體中文";
+
+// USED IN BUTTONS, MENUS
+"gen_use_end_session_cap" = "結束工作階段";
+
+// USED TO INFORM USER OF KEY COMMAND
+"gen_use_command_x" = "⌘X";
+
+// USED IN BUTTONS, MENUS
+"gen_use_cont_session_cap" = "繼續工作階段";
+
+// USED IN MENU
+"gen_use_close_menu" = "關閉選單";
+
+// USED IN SENTENCES
+// EXAMPLE: THERE ARE 10 MINUTES REMAINING IN THIS SESSION.
+"gen_use_remaining" = "剩餘";
+
+// USED IN SENTENCES
+// EXAMPLE USAGE: BATTERY IS 100% 'CHARGED'
+"gen_use_charged" = "已充電";
+
+// EXAMPLE USAGE: POWER ADAPTER CONNECTED 'AND'/'OR' BATTERY 100% CHARGED
+"gen_use_and" = "與";
+
+// EXAMPLE USAGE: POWER ADAPTER CONNECTED 'OR' BATTERY 100% CHARGED
+"gen_use_or" = "或";
+
+// EXAMPLE USAGE: CLICK THE BUTTON LABELED 'SAVE' TO KEEP YOUR CHANGES
+"gen_use_save" = "儲存";
+
+// EXAMPLE USAGE: CLICK THE BUTTON LABELED 'CANCEL' TO DISCARD YOUR CHANGES
+"gen_use_cancel" = "取消";
+
+// EXAMPLE USAGE: CLICK THE BUTTON LABELED 'CONTINUE' TO PROCEED
+"gen_use_continue" = "繼續";
+
+// EXAMPLE USAGE: CLICK THE BUTTON LABELED 'SELECT' TO CONFIRM YOUR SELECTION
+"gen_use_select" = "選取";
+
+// USED AS A BUTTON LABEL OR MENU ITEM TITLE, ACTIONABLE, CLICKING ON THIS WILL END A SESSION
+"gen_use_end_session" = "結束目前工作階段";
+
+// USED IN CONJUNCTION WITH A NUMBER, EXAMPLE USAGE: Duration = 10 'hours'
+"gen_use_days" = "天";
+"gen_use_day" = "天";
+"gen_use_hours" = "小時";
+"gen_use_hour" = "小時";
+"gen_use_minutes" = "分鐘";
+"gen_use_minute" = "分鐘";
+"gen_use_seconds" = "秒";
+"gen_use_second" = "秒";
+
+// USED AS A CATEGORY, EXAMPLE: MENU NAME 'HOURS' SUBMENU CONTAINS "1 HOUR", "2 HOURS", ETC.
+"gen_use_hours_cap" = "小時";
+"gen_use_minutes_cap" = "分鐘";
+
+// TIME UNIT ABBREVIATIONS
+// EXAMPLE: 1h 30m = 1 HOUR 30 MINUTES
+"duration_abbrv_hours_h" = "h";
+"duration_abbrv_hours_hrs" = "hrs";
+
+"duration_abbrv_minutes_mins" = "mins";
+"duration_abbrv_minutes_m" = "m";
+
+"duration_abbrv_seconds_secs" = "secs";
+"duration_abbrv_seconds_s" = "s";
+
+// USED IN SENTENCE; EXAMPLE: 10 MINUTES 'OF INACTIVITY'
+"gen_use_of_inactivity" = "閒置";
+
+// USED IN BUTTON TITLE FOR OTHER TIME DURATION SESSIONS
+// EXAMPLE: 'FOR' 3 HOURS, 'UNTIL' 5:00 PM
+"gen_use_other_time_for_cap" = "持續";
+"gen_use_other_time_until_cap" = "直到";
+
+// USED TO INDICATE A CUSTOM TIME SELECTION AS OPPOSED TO THE STANDARD SELECTIONS
+// EXAMPLE: " 'OTHER TIME:' 2 HRS 16 MINS "
+"gen_use_other_time_colon" = "其他時間：";
+
+// USED TO INDICATE THAT NO DEVICES (i.e. USB or BLUETOOTH DEVICE) ARE CONNECTED TO THIS MAC
+"gen_use_no_recog_dev" = "未連接可辨識的裝置";
+
+// USED TO PROMPT USER TO CONTINUE OR END A SESSION
+"gen_use_cont_session" = "您要繼續此工作階段嗎？";
+
+// EXAMPLE 100 'PIXELS' WIDE
+"gen_use_pixels" = "像素";
+
+// EXAMPLE 1 'PIXEL' WIDE
+"gen_use_pixel" = "像素";
+
+// THE LOCALIZED NAME OF THE FINDER APP IN THE TARGET LANGUAGE. MAY BE FINDER AND NO CHANGED NEEDED
+"finder_app_name" = "Finder";
+
+// THE LOCALIZED PATH TO THE USER LIBRARY → PREFERENCES DIRECTORY
+// DO NOT ADD ~ OR ANY OTHER PATH COMPONENTS
+// FULL PATH IS GENERATED DYNAMICALLY USING ACCOUNT SHORT NAME
+// ONLY TRANSLATE THIS IF THESE FOLDER NAMES APPEAR DIFFERENTLY IN THE TARGET LANGUAGE
+// OTHERWISE, DO NOT TRANSLATE
+"path_to_usr_prefs" = "/Library/Preferences/";
+
+// Used to denote the version of the app. Example: Version 5.0
+"gen_use_version_cap" = "版本";
+
+// USED AS BUTTON LABEL/TITLE IN RESPONSE TO A QUESTION
+// EXAMPLE: Q: IS THIS DRIVE A NETWORK VOLUME? BUTTON TITLES: 'YES', 'NO'
+"gen_use_yes_cap" = "是";
+"gen_use_no_cap" = "否";
+
+
+
+
+// ---------------------------------------------------------------------------
+// SESSION DURATIONS
+// USED PRIMARILY IN IN MENUS AS SELECTABLE ITEMS
+
+"pref_duration_other" = "其他時間...";
+"pref_duration_indef" = "無限期";
+"pref_duration_5secs" = "5秒";
+"pref_duration_10secs" = "10秒";
+"pref_duration_15secs" = "15秒";
+"pref_duration_30secs" = "30秒";
+"pref_duration_1min" = "1分鐘";
+"pref_duration_5mins" = "5分鐘";
+"pref_duration_10mins" = "10分鐘";
+"pref_duration_15mins" = "15分鐘";
+"pref_duration_20mins" = "20分鐘";
+"pref_duration_25mins" = "25分鐘";
+"pref_duration_30mins" = "30分鐘";
+"pref_duration_35mins" = "35分鐘";
+"pref_duration_40mins" = "40分鐘";
+"pref_duration_45mins" = "45分鐘";
+"pref_duration_50mins" = "50分鐘";
+"pref_duration_55mins" = "55分鐘";
+"pref_duration_1hr" = "1小時";
+"pref_duration_2hrs" = "2小時";
+"pref_duration_3hrs" = "3小時";
+"pref_duration_4hrs" = "4小時";
+"pref_duration_5hrs" = "5小時";
+"pref_duration_6hrs" = "6小時";
+"pref_duration_7hrs" = "7小時";
+"pref_duration_8hrs" = "8小時";
+"pref_duration_9hrs" = "9小時";
+"pref_duration_10hrs" = "10小時";
+"pref_duration_12hrs" = "12小時";
+"pref_duration_24hrs" = "24小時";
+"pref_duration_download" = "檔案下載中...";
+
+//SESSION TIME REMAINING
+"session_time_remain_infin" = "剩餘時間不確定";
+"session_time_remain_dwnld" = "檔案下載期間";
+
+//SESSION TIME EXTENSION
+"session_time_extend" = "延長工作階段";
+
+
+
+// ---------------------------------------------------------------------------
+// DELAYED START DURATIONS
+// USED PRIMARILY IN IN MENUS AS SELECTABLE ITEMS
+
+"scrn_svr_delay_dur_1m" = "1分鐘後啟動";
+"scrn_svr_delay_dur_5m" = "5分鐘後啟動";
+"scrn_svr_delay_dur_10m" = "10分鐘後啟動";
+"scrn_svr_delay_dur_15m" = "15分鐘後啟動";
+"scrn_svr_delay_dur_30m" = "30分鐘後啟動";
+"scrn_svr_delay_dur_45m" = "45分鐘後啟動";
+"scrn_svr_delay_dur_1h" = "1小時後啟動";
+"scrn_svr_delay_dur_1h15m" = "1小時15分鐘後啟動";
+"scrn_svr_delay_dur_1h30m" = "1小時30分鐘後啟動";
+"scrn_svr_delay_dur_1h45m" = "1小時45分鐘後啟動";
+"scrn_svr_delay_dur_2h" = "2小時後啟動";
+"scrn_svr_delay_dur_2h15m" = "2小時15分鐘後啟動";
+"scrn_svr_delay_dur_2h30m" = "2小時30分鐘後啟動";
+"scrn_svr_delay_dur_2h45m" = "2小時45分鐘後啟動";
+"scrn_svr_delay_dur_3h" = "3小時後啟動";
+"scrn_svr_delay_dur_3h15m" = "3小時15分鐘後啟動";
+"scrn_svr_delay_dur_3h30m" = "3小時30分鐘後啟動";
+"scrn_svr_delay_dur_3h45m" = "3小時45分鐘後啟動";
+"scrn_svr_delay_dur_4h" = "4小時後啟動";
+"scrn_svr_delay_dur_4h15m" = "4小時15分鐘後啟動";
+"scrn_svr_delay_dur_4h30m" = "4小時30分鐘後啟動";
+"scrn_svr_delay_dur_4h45m" = "4小時45分鐘後啟動";
+"scrn_svr_delay_dur_5h" = "5小時後啟動";
+
+
+
+// ---------------------------------------------------------------------------
+// FILE DOWNLOAD SESSION PROGRESS
+// USED PRIMARILY IN IN MENUS AS SELECTABLE ITEMS
+
+// ** NOTE: DO NOT REMOVE '%@' or '%.f%%' **
+// PLACEHOLDERS REPRESENT DOWNLOAD PROGRESS - EXAMPLE" File is downloading... (2GB | 47%)
+"pref_duration_download_progress" = "檔案下載中...(%@ | %.f%%)";
+"pref_duration_download_progress_unknown" = "檔案下載中...(%@ / ?)";
+
+
+
+// ---------------------------------------------------------------------------
+// DATE FORMATTERS
+
+// 12 HOUR DATE FORMATTER STRING 1
+"12_hr_date_formatter" = "MMM d, h:mm a";
+
+// 12 HOUR DATE FORMATTER STRING 2
+"12_hr_date_formatter_2" = "h:mm a";
+
+// 24 HOUR DATE FORMATTER STRING
+"24_hr_date_formatter" = "MMM d, HH:mm";
+
+// 24 HOUR DATE FORMATTER STRING 2
+"24_hr_date_formatter_2" = "HH:mm";
+
+
+
+// ---------------------------------------------------------------------------
+// SESSION ACTIVATION REASONS
+
+"act_reason_sess_at_launch" = "應用程式啟動時新增工作階段";
+"act_reason_manual" = "手動啟動";
+"act_reason_app_running" = "正在執行"; // example usage: "Safari is running"
+"act_reason_trigger_name" = "觸發器名稱";
+"act_reason_applescript" = "AppleScript啟動";
+"act_reason_woke_from_sleep" = "Mac從睡眠中喚醒";
+"act_reason_ac_connected" = "電源轉換器重新連接";
+
+
+
+// ---------------------------------------------------------------------------
+// ----- PREFERENCES WINDOW → GLOBAL
+// ---------------------------------------------------------------------------
+
+"pref_window_title_13" = "設定";
+"pref_window_title" = "偏好設定"; // 5.0.2
+
+"pref_global_lbl_uses_default_duration" = "↳使用預設持續時間";
+"pref_global_bttn_screen_saver_exceptions" = "例外...";
+"scrn_svr_excpt_VNC" = "螢幕共享/VNC/遠端桌面連線"; // 5.1.2
+
+
+
+// ---------------------------------------------------------------------------
+// ----- PREFERENCES WINDOW → GENERAL TAB
+// ---------------------------------------------------------------------------
+
+// PREFERENCES WINDOW TOOLBAR ITEM LABEL
+"prefs_tb_gen" = "一般";
+
+// PREFERENCES → GENERAL BUTTONS
+"pref_gen_bttn_launch_app_at_login" = "登入時啟動Amphetamine";
+"pref_gen_bttn_start_session_at_launch" = "Amphetamine啟動時開始工作階段";
+"pref_gen_bttn_start_session_after_wake" = "從睡眠中喚醒後開始工作階段";
+"pref_gen_bttn_hide_dock_icon" = "在Dock中隱藏Amphetamine";
+"pref_gen_bttn_reduce_motion" = "減少動態效果";
+"pref_gen_bttn_reset_warnings" = "重設警告與對話方塊";
+
+"pref_gen_bttn_reset_all_prefs_13" = "重設所有設定";
+"pref_gen_bttn_reset_all_prefs" = "重設所有偏好設定";
+
+// PREFERENCES → GENERAL LABELS
+"pref_gen_lbl_quick_start" = "快速啟動工作階段：";
+"pref_gen_lbl_launch_wake" = "啟動與喚醒行為：";
+"pref_gen_lbl_other" = "其他：";
+"pref_gen_lbl_takes_effect_close_win" = "↳關閉所有開啟的視窗後生效";
+
+// PREFERENCES → GENERAL MENU ITEMS
+"pref_gen_mi_quick_start_rightclick" = "右鍵點擊(左鍵點擊顯示選單)";
+"pref_gen_mi_quick_start_leftclick" = "左鍵點擊(右鍵點擊顯示選單)";
+
+
+// ---------------------------------------------------------------------------
+// (?) BUTTON MENU ITEMS
+
+// ----- PREFERENCES → GENERAL → Quick-Start a Session Help Message
+
+// Title
+"help_message_quick_start_title" = "快速啟動工作階段";
+
+// Body
+"help_message_quick_start_body" = "選擇左鍵點擊(也稱為主要點擊)或右鍵點擊(也稱為次要點擊)選單列中的Amphetamine圖示時，是顯示Amphetamine的選單還是開始/結束工作階段。";
+
+// ----- PREFERENCES → GENERAL → Launch and Wake Behavior Help Message
+
+// Title
+"help_message_quick_launch_wake_title" = "啟動與喚醒行為"; // fix me quick?
+
+// Body ** NOTE: DO NOT REMOVE '\n' **
+"help_message_quick_launch_wake_body" = "•登入時啟動Amphetamine\n勾選此方塊，如果您希望Amphetamine在您登入Mac時自動啟動。\n\n• Amphetamine啟動時開始工作階段\n勾選此方塊，如果您希望Amphetamine在應用程式啟動時自動開始一個新的工作階段。\n\n•從睡眠中喚醒後開始工作階段\n勾選此方塊，如果您希望Amphetamine在您的Mac從睡眠中喚醒時開始一個新的工作階段。如果已有工作階段在執行，則不會啟動新的工作階段。";
+
+// ----- PREFERENCES → GENERAL → Other Help Message
+
+// Title
+"help_message_other_title" = "其他";
+
+// Body (macOS 10.14+) ** NOTE: DO NOT REMOVE '\n' **
+
+"help_message_other_body_post_highsierra_13" = "•在Dock中隱藏Amphetamine\n勾選此方塊以隱藏Amphetamine在Dock中的圖示。在macOS 10.15及更高版本上，即使啟用了「在Dock中隱藏」偏好設定，當Amphetamine的其中一個視窗(例如「設定」視窗)開啟時，Dock圖示也會自動出現和消失。關閉所有開啟的Amphetamine視窗將使Dock圖示再次消失。\n\n•減少動態效果\n勾選此方塊以減少Amphetamine介面中的動畫使用。\n\n點擊「重設警告與對話方塊」按鈕以清除警告訊息和其他對話方塊上的任何「不再顯示」標記。\n\n點擊「重設所有設定」按鈕將Amphetamine恢復到預設狀態(所有設定，包括觸發器都將遺失)。";
+
+"help_message_other_body_post_highsierra" = "•在Dock中隱藏Amphetamine\n勾選此方塊以隱藏Amphetamine在Dock中的圖示。在macOS 10.15及更高版本上，即使啟用了「在Dock中隱藏」偏好設定，當Amphetamine的其中一個視窗(例如「偏好設定」視窗)開啟時，Dock圖示也會自動出現和消失。關閉所有開啟的Amphetamine視窗將使Dock圖示再次消失。\n\n在macOS 10.14及更低版本上，您可能需要停用macOS的「在Dock中顯示最近使用的應用程式」功能，方法是前往→系統偏好設定→Dock，才能完全從Dock中移除Amphetamine。\n\n•減少動態效果\n勾選此方塊以減少Amphetamine介面中的動畫使用。\n\n點擊「重設警告與對話方塊」按鈕以清除警告訊息和其他對話方塊上的任何「不再顯示」標記。\n\n點擊「重設所有偏好設定」按鈕將Amphetamine恢復到預設狀態(所有偏好設定，包括觸發器都將遺失)。";
+
+
+// Body (macOS 10.11 - 10.13) ** NOTE: DO NOT REMOVE '\n' **
+
+"help_message_other_body_pre_mojave_13" = "•在Dock中隱藏Amphetamine\n勾選此方塊以隱藏Amphetamine在Dock中的圖示。\n\n•在「快速設定」中使用顏色表示狀態\n勾選此方塊以使用彩色圓圈表示「快速設定」中每個項目的狀態。綠色=開啟，紅色=關閉。取消勾選此方塊以使用非基於顏色的圖像：核取記號表示開啟，X表示關閉。\n\n•減少動態效果\n勾選此方塊以減少Amphetamine介面中的動畫使用。\n\n點擊「重設警告與對話方塊」按鈕以清除警告訊息和其他對話方塊上的任何「不再顯示」標記。\n\n點擊「重設所有設定」按鈕將Amphetamine恢復到預設狀態(所有設定，包括觸發器都將遺失)。";
+
+"help_message_other_body_pre_mojave" = "•在Dock中隱藏Amphetamine\n勾選此方塊以隱藏Amphetamine在Dock中的圖示。\n\n•在「快速偏好設定」中使用顏色表示狀態\n勾選此方塊以使用彩色圓圈表示「快速偏好設定」中每個項目的狀態。綠色=開啟，紅色=關閉。取消勾選此方塊以使用非基於顏色的圖像：核取記號表示開啟，X表示關閉。\n\n•減少動態效果\n勾選此方塊以減少Amphetamine介面中的動畫使用。\n\n點擊「重設警告與對話方塊」按鈕以清除警告訊息和其他對話方塊上的任何「不再顯示」標記。\n\n點擊「重設所有偏好設定」按鈕將Amphetamine恢復到預設狀態(所有偏好設定，包括觸發器都將遺失)。";
+
+
+
+
+// ---------------------------------------------------------------------------
+// ----- PREFERENCES WINDOW → SESSION DEFAULTS TAB
+// ---------------------------------------------------------------------------
+
+// PREFERENCES WINDOW TOOLBAR ITEM LABEL
+"prefs_tb_sess" = "工作階段預設值";
+
+// PREFERENCES → SESSIONS DEFAULTS BUTTONS
+"pref_sess_nt_button_title" = "非觸發器工作階段";
+"pref_sess_nt_bttn_default_duration_edit" = "編輯";
+"pref_sess_nt_bttn_end_session_force_sleep" = "Mac強制睡眠時結束工作階段";
+"pref_sess_nt_bttn_allow_display_sleep" = "允許顯示器睡眠";
+"pref_sess_nt_bttn_allow_cdm" = "顯示器關閉時允許系統睡眠";
+"pref_sess_nt_bttn_allow_screen_saver" = "之後允許螢幕保護程式";
+"pref_sess_nt_bttn_end_low_batt" = "如果電量(%)低於則結束工作階段";
+"pref_sess_nt_bttn_prompt_end_low_batt" = "結束工作階段前提示";
+"pref_sess_nt_bttn_ignore_batt_if_pwr_adptr" = "如果連接了電源轉換器，則忽略電量(%)";
+"pref_sess_nt_bttn_start_session_pwr_adptr_connect" = "如果重新連接，則開始新的工作階段";
+
+"pref_sess_nt_bttn_endtime_timer" = "使用計時器"; // v5.0.2
+"pref_sess_nt_bttn_endtime_sysclock" = "使用系統時鐘"; //v5.0.2
+
+// PREFERENCES → SESSION DEFAULTS LABELS
+"pref_sess_nt_lbl_dd" = "預設持續時間：";
+"pref_sess_nt_lbl_end_time_calc" = "結束時間計算：";
+"pref_sess_nt_lbl_forced_sleep" = "強制睡眠：";
+"pref_sess_nt_lbl_display_sleep" = "顯示器睡眠：";
+"pref_sess_nt_lbl_cdm" = "關閉顯示器模式：";
+"pref_sess_nt_lbl_screen_saver" = "螢幕保護程式：";
+"pref_sess_nt_lbl_battery" = "電池：";
+"pref_sess_nt_lbl_pwr_adptr" = "電源轉換器：";
+"pref_sess_nt_lbl_cust_dd_enter" = "輸入新持續時間的時間：";
+
+// OTHER STRINGS
+
+// USED IN SENTENCE; EXAMPLE: " 'Your Mac's battery is' not connected to power adapter"
+// ** NOTE: DO NOT REMOVE %@ **
+"pref_sess_batt_is" = "您的Mac電池%@。";
+
+// USED IN SENTENCE; EXAMPLE: " 'Your Mac's battery is below' 10%"
+// ** NOTE: DO NOT REMOVE '%@' or '%li%%' **
+"pref_sess_batt_is_below" = "您的Mac電池電量低於%@。";
+"pref_sess_batt_is_below2" = "電池電量低於%li%%";
+
+// USED IN SENTENCE; EXAMPLE: " 'End session when:' not connected to power adapter"
+"pref_sess_nt_end_when" = "結束工作階段時：";
+
+// USED IN SENTENCE; EXAMPLE: "End session when: 'not connected to power adapter' "
+"pref_sess_nt_ac_not_connected" = "未連接電源轉換器";
+"pref_sess_nt_ac_not_connected_cap" = "未連接電源轉換器";
+"pref_sess_nt_ac_connected" = "已連接電源轉換器";
+
+// USED IN SENTENCE; EXAMPLE: " 'End session if charge (%) is below: ' 10%"
+// ** NOTE: LEAVE SPACE CHAR AT END OF STRING **
+"pref_sess_nt_end_if_chrg" = "如果電量(%)低於則結束工作階段：";
+
+// ---------------------------------------------------------------------------
+// (?) BUTTON MENU ITEMS
+
+// ----- PREFERENCES → SESSION DEFAULTS → Default Duration Help Message
+
+// Title
+"help_message_default_duration_title" = "預設持續時間";
+
+// Body
+"help_message_default_duration_body" = "預設持續時間在Amphetamine中使用，當未另外提供工作階段持續時間時。例如，當工作階段在啟動時開始，以及點擊系統選單列中的Amphetamine圖示以開始工作階段時。";
+
+// ----- PREFERENCES → SESSION DEFAULTS → End Time Calculation Help Message
+
+// Title
+"help_message_end_time_cal_title" = "結束時間計算";
+
+// Body ** NOTE: DO NOT REMOVE '\n' **
+"help_message_end_time_cal_body" = "工作階段結束時間可以使用計時器或系統時鐘計算。\n\n例如，假設您選擇「使用計時器」，然後開始一個3小時的工作階段。然後您立即讓您的Mac睡眠2小時。當您的Mac喚醒時，工作階段仍將有3小時剩餘。這是因為計時器在您的Mac睡眠時暫停。\n\n在上述相同情況下，如果您選擇了「使用系統時鐘」，則工作階段將只剩下1小時。這是因為在您的Mac睡眠時，系統時鐘已經過了2小時。";
+
+// ----- PREFERENCES → SESSION DEFAULTS → Forced Sleep Help Message
+
+// Title
+"help_message_forced_sleep_title" = "強制睡眠";
+
+// Body
+"help_message_forced_sleep_body" = "勾選此方塊以在您的Mac被強制睡眠時自動結束任何非觸發器工作階段。強制睡眠包括您採取任何動作讓您的Mac睡眠的任何情況，例如點擊→睡眠，或使用鍵盤快速鍵/熱鍵。";
+
+// ----- PREFERENCES → SESSION DEFAULTS → Display Sleep Help Message
+
+// Title
+"help_message_display_sleep_title" = "顯示器睡眠";
+
+// Body ** NOTE: DO NOT REMOVE '\n' **
+"help_message_display_sleep_body_13" = "如果您希望Mac的顯示器在工作階段期間睡眠，請勾選此方塊。如果您允許顯示器睡眠，您的顯示器將在您在→系統設定→能源節約器中定義的時間過後睡眠/關閉。\n\n請注意，此偏好設定僅影響非觸發器工作階段。如果您希望基於觸發器的工作階段允許您的Mac顯示器睡眠，則可以單獨設定每個觸發器。";
+
+"help_message_display_sleep_body" = "如果您希望Mac的顯示器在工作階段期間睡眠，請勾選此方塊。如果您允許顯示器睡眠，您的顯示器將在您在→系統偏好設定→能源節約器中定義的時間過後睡眠/關閉。\n\n請注意，此偏好設定僅影響非觸發器工作階段。如果您希望基於觸發器的工作階段允許您的Mac顯示器睡眠，則可以單獨設定每個觸發器。";
+
+
+
+// ----- PREFERENCES → SESSION DEFAULTS → Closed-Display Mode Help Message
+
+// Title
+"help_message_closed_display_title" = "關閉顯示器模式";
+
+// Body ** NOTE: DO NOT REMOVE '\n' **
+"help_message_closed_display_body_13" = "如果您希望Amphetamine在顯示器關閉時讓您的Mac保持喚醒，請取消勾選此方塊。\n\n通常，外部顯示器、鍵盤、滑鼠和電源轉換器都必須連接到您的Mac才能啟用關閉顯示器模式。Amphetamine可以暫時覆寫這些要求，並在顯示器關閉時阻止您的Mac睡眠。\n\n如果您的Mac不支援此功能，則該核取方塊將被停用。\n\n此偏好設定僅影響非觸發器工作階段。如果您想為觸發器工作階段啟用此功能，請前往「設定」→「觸發器」並編輯您要新增此功能的每個觸發器。\n\n使用此功能時，您可能需要考慮在「設定」→「通知」→「關閉顯示器模式」中設定關閉顯示器模式警告。";
+
+"help_message_closed_display_body" = "如果您希望Amphetamine在顯示器關閉時讓您的Mac保持喚醒，請取消勾選此方塊。\n\n通常，外部顯示器、鍵盤、滑鼠和電源轉換器都必須連接到您的Mac才能啟用關閉顯示器模式。Amphetamine可以暫時覆寫這些要求，並在顯示器關閉時阻止您的Mac睡眠。\n\n如果您的Mac不支援此功能，則該核取方塊將被停用。\n\n此偏好設定僅影響非觸發器工作階段。如果您想為觸發器工作階段啟用此功能，請前往「偏好設定」→「觸發器」並編輯您要新增此功能的每個觸發器。\n\n使用此功能時，您可能需要考慮在「偏好設定」→「通知」→「關閉顯示器模式」中設定關閉顯示器模式警告。";
+
+
+// ----- PREFERENCES → SESSION DEFAULTS → Screen Saver Help Message
+
+// Title
+"help_message_screen_saver_title" = "螢幕保護程式";
+
+// Body
+"help_message_screen_saver_body" = "如果您希望Mac的螢幕保護程式在非觸發器工作階段期間執行，請勾選此方塊。使用滑桿選擇啟動螢幕保護程式前的時間閾值。在非觸發器工作階段期間，Amphetamine會追蹤您的Mac的閒置時間。如果閒置時間高於您設定的閾值，Amphetamine將啟動您的螢幕保護程式。\n\n您可以點擊「例外...」按鈕將應用程式新增到例外清單。如果例外清單中的應用程式正在您的Mac上執行，Amphetamine將不會啟動螢幕保護程式。如果您正在觀看影片或閱讀電子書等，這可能很有用。\n\n請注意，此偏好設定僅影響非觸發器工作階段。如果您希望基於觸發器的工作階段允許您的螢幕保護程式執行，則可以單獨設定每個觸發器以允許或不允許螢幕保護程式。";
+
+// ----- PREFERENCES → SESSION DEFAULTS → Battery Help Message
+
+// Title
+"help_message_battery_title" = "電池";
+
+// Body ** NOTE: DO NOT REMOVE '\n' **
+"help_message_battery_body_13" = "•如果電池電量低於...則結束工作階段\n如果您希望Amphetamine在您的Mac電池電量低於使用滑桿設定的閾值時自動結束非觸發器工作階段，請勾選此方塊。將滑桿一直向右移動，以便在未連接電源轉換器時隨時結束工作階段。\n\n•結束工作階段前提示\n如果您希望在Amphetamine因電池電量低而自動結束工作階段之前收到提示，請勾選此方塊。如果需要，您可以選擇繼續工作階段，忽略Mac的電池電量。\n\n•如果連接了電源轉換器，則忽略電量\n如果您希望Amphetamine在您的Mac連接電源轉換器時不要因電池電量低而自動結束工作階段，請勾選此方塊。\n\n請注意，這些設定僅影響非觸發器工作階段。如果您希望觸發器工作階段考慮您的Mac電池電量，請將電源條件新增到您的觸發器中。";
+
+"help_message_battery_body" = "•如果電池電量低於...則結束工作階段\n如果您希望Amphetamine在您的Mac電池電量低於使用滑桿設定的閾值時自動結束非觸發器工作階段，請勾選此方塊。將滑桿一直向右移動，以便在未連接電源轉換器時隨時結束工作階段。\n\n•結束工作階段前提示\n如果您希望在Amphetamine因電池電量低而自動結束工作階段之前收到提示，請勾選此方塊。如果需要，您可以選擇繼續工作階段，忽略Mac的電池電量。\n\n•如果連接了電源轉換器，則忽略電量\n如果您希望Amphetamine在您的Mac連接電源轉換器時不要因電池電量低而自動結束工作階段，請勾選此方塊。\n\n請注意，這些偏好設定僅影響非觸發器工作階段。如果您希望觸發器工作階段考慮您的Mac電池電量，請將電源條件新增到您的觸發器中。";
+
+
+
+// ----- PREFERENCES → SESSION DEFAULTS → Power Adapter Help Message
+
+// Title
+"help_message_power_adapter_title" = "電源轉換器";
+
+// Body ** NOTE: DO NOT REMOVE '\n' **
+"help_message_power_adapter_body" = "請注意，您必須啟用「如果電池電量低於...則結束工作階段」偏好設定，並啟用「如果連接了電源轉換器則忽略電池電量」或將「如果電池電量低於...則結束工作階段」滑桿一直向右移動，此偏好設定才可用。\n\n勾選此方塊，以便在您的Mac連接電源轉換器時，Amphetamine自動開始一個新的工作階段。只有在前一個工作階段因電池電量低而結束時，Amphetamine才會開始一個新的工作階段。";
+
+
+
+
+// ---------------------------------------------------------------------------
+// ----- PREFERENCES WINDOW → SYSTEM CONTROL TAB
+// ---------------------------------------------------------------------------
+
+// PREFERENCES → SYSTEM CONTROL BUTTONS
+"prefs_tb_sys_cntrl" = "系統控制";
+"pref_sess_as_bttn_lck_scrn_pt1" = "閒置";
+"pref_sess_as_bttn_lck_scrn_pt2" = "後鎖定螢幕";
+"pref_sess_as_bttn_lck_scrn_use_cursor" = "使用游標移動來判斷閒置";
+"pref_sess_as_bttn_lck_scrn_disp_clsd" = "顯示器關閉後立即鎖定螢幕";
+"pref_sess_as_bttn_lck_scrn_allow_disp_sleep" = "螢幕鎖定時允許顯示器睡眠";
+"pref_sess_as_bttn_cursor_pt1" = "每";
+"pref_sess_as_bttn_cursor_pt2" = "移動游標，在閒置";
+"pref_sess_as_bttn_cursor_pt3" = "後";
+"pref_sess_as_bttn_cursor_stop_pt1" = "閒置";
+"pref_sess_as_bttn_cursor_stop_pt2" = "後停止移動游標";
+"pref_sess_as_bttn_fast_usr_switch" = "切換帳戶時結束工作階段";
+
+// PREFERENCES → SYSTEM CONTROL LABELS
+"pref_sess_as_lbl_cursor_speed" = "游標速度：";
+"pref_sess_as_lbl_cursor_speed_fast" =  "快";
+"pref_sess_as_lbl_cursor_speed_slow" =  "慢";
+"pref_sess_as_lbl_cursor_speed_warn" = "較慢的移動會稍微增加CPU使用率";
+"pref_sess_as_lbl_lck_scrn" = "鎖定螢幕：";
+"pref_sess_as_lbl_cursor" = "游標：";
+"pref_sess_as_lbl_fast_usr_switch" = "快速使用者切換：";
+
+// ---------------------------------------------------------------------------
+// (?) BUTTON MENU ITEMS
+
+// ----- PREFERENCES → SYSTEM CONTROL → Lock Screen Help Message
+
+// Title
+"help_message_lock_screen_title" = "鎖定螢幕";
+
+// Body ** NOTE: DO NOT REMOVE '\n' **
+"help_message_lock_screen_body_13" = "•閒置...後鎖定螢幕\n勾選此方塊，讓Amphetamine在指定的閒置時間後鎖定您的Mac螢幕。只有在工作階段進行中時，Amphetamine才會嘗試鎖定您的螢幕。要控制工作階段未進行中時螢幕何時鎖定，請前往→系統設定→安全性與隱私權→一般。\n\n•使用游標移動來判斷閒置\n勾選此方塊，讓Amphetamine在決定何時鎖定螢幕時，不僅考慮系統閒置時鐘，還考慮游標/滑鼠移動。如果您使用VNC/ARD/RDP遠端存取您的Mac，此功能可能很有用。\n\n•顯示器關閉後立即鎖定螢幕\n勾選此方塊，讓Amphetamine在顯示器關閉後立即鎖定您的Mac螢幕。此功能僅在工作階段進行中且您已為該工作階段啟用「關閉顯示器模式」時才會運作。如果您的Mac不支援此功能，則該核取方塊將被停用。";
+
+"help_message_lock_screen_body" = "•閒置...後鎖定螢幕\n勾選此方塊，讓Amphetamine在指定的閒置時間後鎖定您的Mac螢幕。只有在工作階段進行中時，Amphetamine才會嘗試鎖定您的螢幕。要控制工作階段未進行中時螢幕何時鎖定，請前往→系統偏好設定→安全性與隱私權→一般。\n\n•使用游標移動來判斷閒置\n勾選此方塊，讓Amphetamine在決定何時鎖定螢幕時，不僅考慮系統閒置時鐘，還考慮游標/滑鼠移動。如果您使用VNC/ARD/RDP遠端存取您的Mac，此功能可能很有用。\n\n•顯示器關閉後立即鎖定螢幕\n勾選此方塊，讓Amphetamine在顯示器關閉後立即鎖定您的Mac螢幕。此功能僅在工作階段進行中且您已為該工作階段啟用「關閉顯示器模式」時才會運作。如果您的Mac不支援此功能，則該核取方塊將被停用。";
+
+
+// ----- PREFERENCES → SYSTEM CONTROL → Cursor Help Message
+
+// Title
+"help_message_cursor_title" = "游標";
+
+// Body ** NOTE: DO NOT REMOVE '\n' **
+"help_message_cursor_body" = "•每...移動游標\n勾選此方塊並選擇一個間隔和閒置閾值，讓Amphetamine在工作階段期間移動滑鼠游標。此功能適用於非觸發器和觸發器工作階段。請注意，如果您的Mac螢幕保護程式正在執行，游標將不會移動。即使您已為工作階段啟用「允許顯示器睡眠」，游標移動也會阻止顯示器睡眠。\n\n•...後停止移動游標\n勾選此方塊以在指定的閾值後結束Amphetamine的游標移動。如果您已為工作階段啟用「允許顯示器睡眠」，停止游標移動將允許您的Mac顯示器睡眠。";
+
+// ----- PREFERENCES → SYSTEM CONTROL → Fast User Switching Help Message
+
+// Title
+"help_message_fast_user_switch_title" = "快速使用者切換";
+
+// Body
+"help_message_fast_user_switch_body" = "勾選此方塊以在您切換到Mac上的其他使用者帳戶而未登出執行Amphetamine的帳戶時，自動停用所有Amphetamine工作階段(包括觸發器和非觸發器)。";
+
+
+
+
+// ---------------------------------------------------------------------------
+// ----- PREFERENCES WINDOW → TRIGGERS TAB
+// ---------------------------------------------------------------------------
+
+// PREFERENCES WINDOW TOOLBAR ITEM LABEL
+"prefs_tb_trig" = "觸發器";
+
+// PREFERENCES → TRIGGERS BUTTONS
+"pref_trig_bttn_enable" = "啟用觸發器";
+
+// PREFERENCES → TRIGGERS LABELS
+"pref_trig_lbl_edit" = "按兩下觸發器名稱以編輯觸發器";
+
+// TRIGGER TABLE HEADERS
+"trig_tbl_head_name" = "觸發器名稱";
+"trig_tbl_head_enabled" = "已啟用";
+
+// ----- Triggers Help Message
+
+// Title
+"help_triggers_title" = "觸發器";
+
+// Body ** NOTE: DO NOT REMOVE '\n' **
+"help_triggers_body" = "觸發器是Amphetamine最強大的功能之一。您可以建立任意數量的觸發器。當觸發器的所有條件都滿足時，如果沒有正在執行的工作階段，Amphetamine將自動開始一個新的工作階段。\n\n除了全域「啟用觸發器」按鈕(啟用/停用所有觸發器)外，您建立的每個觸發器也可以單獨啟用/停用。使用清單中每個觸發器右側的核取方塊暫時啟用或停用單個觸發器。\n\n使用+按鈕建立一個新的觸發器。在清單中選取一個觸發器，然後使用−按鈕刪除一個觸發器。\n\n在清單中選取一個觸發器，然後使用↑和↓按鈕重新排序觸發器清單。觸發器將按照它們在清單中顯示的順序進行評估。清單中最上面的觸發器將首先被評估。如果其所有條件都滿足，則將開始一個工作階段。如果其條件不滿足，則將評估清單中的下一個觸發器。";
+
+
+
+
+// ---------------------------------------------------------------------------
+// ----- PREFERENCES WINDOW → DRIVE ALIVE TAB
+// ---------------------------------------------------------------------------
+
+// PREFERENCES WINDOW TOOLBAR ITEM LABEL
+"prefs_tb_drive" = "Drive Alive";
+
+// PREFERENCES → DRIVE ALIVE BUTTONS
+"pref_drivealive_bttn_enable" = "啟用Drive Alive";
+
+// PREFERENCES → DRIVE ALIVE LABELS
+"pref_drivealive_lbl_wake" = "每";
+
+// DRIVE ALIVE TABLE HEADERS
+"drivealive_tbl_head_name" = "磁碟機名稱";
+"drivealive_tbl_head_keepalive" = "一律保持磁碟機喚醒";
+
+// ----- Drive Alive Help Message
+
+// Title
+"help_drivealive_title" = "Drive Alive";
+
+// Body ** NOTE: DO NOT REMOVE '\n' **
+"help_drivealive_body" = "Drive Alive可以讓您的硬碟保持喚醒(活動)並隨時待命。Drive Alive的工作原理是定期向您的硬碟寫入少量資料。這些資料會被重複覆寫，並且只佔用您磁碟機上幾千位元組(KB)的空間。\n\n要新增一個新的磁碟機，請點擊+按鈕，然後選取您要保持喚醒的磁碟機。在清單中選取一個磁碟機，然後點擊−按鈕將其移除。\n\n清單中的每個磁碟機都可以設定為僅在工作階段執行時保持喚醒，或在Amphetamine執行時隨時保持喚醒。要一直保持磁碟機喚醒，請勾選清單中磁碟機右側的方塊。\n\nDrive Alive向您的磁碟機寫入資料的預設間隔是每10秒。您可以透過在視窗底部的數字欄位中輸入一個新數字來變更此設定。";
+
+
+
+
+// ---------------------------------------------------------------------------
+// ----- PREFERENCES WINDOW → HOT KEYS TAB
+// ---------------------------------------------------------------------------
+
+// PREFERENCES WINDOW TOOLBAR ITEM LABEL
+"prefs_tb_hotk" = "熱鍵";
+
+// PREFERENCES → HOT KEYS LABELS
+"pref_hotk_lbl_startend_action" = "如果已有工作階段在執行：";
+"pref_hotk_lbl_start_duration" = "持續時間：";
+"pref_hotk_lbl_startend" = "開始或結束工作階段：";
+"pref_hotk_lbl_start" = "開始工作階段：";
+"pref_hotk_lbl_end" = "結束工作階段：";
+"pref_hotk_lbl_open_menu" = "開啟/關閉選單：";
+"pref_hotk_lbl_open_menu_close" = "使用Esc鍵關閉選單"; // Escape key closes menu
+"pref_hotk_lbl_toggle_disp_sleep" = "切換允許顯示器睡眠：";
+"pref_hotk_lbl_toggle_screen_saver" = "切換允許螢幕保護程式：";
+
+// PREFERENCES → HOT KEYS MENU ITEMS
+"pref_hotk_mi_startend_action_endstart" = "結束工作階段並開始一個新的工作階段";
+"pref_hotk_mi_startend_action_end" = "結束工作階段";
+
+// ---------------------------------------------------------------------------
+// (?) BUTTON MENU ITEMS
+
+// ----- PREFERENCES → HOT KEYS → Start or End Session Help Message
+
+// Title
+"help_message_start_end_session_title" = "開始或結束工作階段";
+
+// Body ** NOTE: DO NOT REMOVE '\n' **
+"help_message_start_end_session_body_13" = "此熱鍵可讓您使用一個熱鍵開始或結束工作階段。工作階段的持續時間將使用預設持續時間(設定→工作階段預設值→預設持續時間)。\n\n錄製此熱鍵的按鍵組合後，無論您在macOS中的何處，都可以存取Amphetamine的此功能。Amphetamine不需要是前景應用程式，但需要正在執行。\n\n如果您無法錄製您想要的熱鍵組合，則表示該按鍵組合已被其他應用程式使用。";
+
+"help_message_start_end_session_body" = "此熱鍵可讓您使用一個熱鍵開始或結束工作階段。工作階段的持續時間將使用預設持續時間(偏好設定→工作階段預設值→預設持續時間)。\n\n錄製此熱鍵的按鍵組合後，無論您在macOS中的何處，都可以存取Amphetamine的此功能。Amphetamine不需要是前景應用程式，但需要正在執行。\n\n如果您無法錄製您想要的熱鍵組合，則表示該按鍵組合已被其他應用程式使用。";
+
+
+// ----- PREFERENCES → HOT KEYS → Start Session Help Message
+
+// Title
+"help_message_start_session_title" = "開始工作階段";
+
+// Body ** NOTE: DO NOT REMOVE '\n' **
+"help_message_start_session_body" = "此熱鍵可讓您使用熱鍵開始具有特定持續時間的工作階段。指定您希望工作階段具有的持續時間。\n\n錄製此熱鍵的按鍵組合後，無論您在macOS中的何處，都可以存取Amphetamine的此功能。Amphetamine不需要是前景應用程式，但需要正在執行。\n\n如果您無法錄製您想要的熱鍵組合，則表示該按鍵組合已被其他應用程式使用。";
+
+// ----- PREFERENCES → HOT KEYS → End Session Help Message
+
+// Title
+"help_message_end_session_title" = "結束工作階段";
+
+// Body ** NOTE: DO NOT REMOVE '\n' **
+"help_message_end_session_body" = "此熱鍵可讓您使用熱鍵結束任何工作階段。\n\n錄製此熱鍵的按鍵組合後，無論您在macOS中的何處，都可以存取Amphetamine的此功能。Amphetamine不需要是前景應用程式，但需要正在執行。\n\n如果您無法錄製您想要的熱鍵組合，則表示該按鍵組合已被其他應用程式使用。";
+
+// ----- PREFERENCES → HOT KEYS → Open Menu Help Message
+
+// Title
+"help_message_open_menu_title" = "開啟選單";
+
+// Body ** NOTE: DO NOT REMOVE '\n' **
+"help_message_open_menu_body" = "此熱鍵可讓您使用熱鍵開啟Amphetamine的選單。這對於快速檢查選單中顯示的工作階段和Drive Alive詳細資訊，或使用方向鍵和/或鍵盤快速鍵(例如⌘F開始「檔案下載期間...」工作階段)快速導覽或選取選單項目很有用。\n\n錄製此熱鍵的按鍵組合後，無論您在macOS中的何處，都可以存取Amphetamine的此功能。Amphetamine不需要是前景應用程式，但需要正在執行。\n\n如果您無法錄製您想要的熱鍵組合，則表示該按鍵組合已被其他應用程式使用。";
+
+// ----- PREFERENCES → HOT KEYS → Toggle Display Sleep Help Message
+
+// Title
+"help_message_toggle_allow_display_sleep_title" = "切換允許顯示器睡眠";
+
+// Body ** NOTE: DO NOT REMOVE '\n' **
+"help_message_toggle_allow_display_sleep_body" = "此熱鍵可讓您開啟/關閉顯示器睡眠。如果正在進行工作階段，熱鍵將為目前工作階段開啟/關閉顯示器睡眠。支援觸發器和非觸發器工作階段。\n\n如果沒有正在進行的工作階段，熱鍵將為非觸發器工作階段開啟/關閉「允許顯示器睡眠」偏好設定。";
+
+// ----- PREFERENCES → HOT KEYS → Toggle Screen Saver Help Message
+
+// Title
+"help_message_toggle_allow_screen_saver_title" = "切換允許螢幕保護程式";
+
+// Body ** NOTE: DO NOT REMOVE '\n' **
+"help_message_toggle_allow_screen_saver_body" = "此熱鍵可讓您開啟/關閉螢幕保護程式啟動。如果正在進行工作階段，熱鍵將為目前工作階段開啟/關閉螢幕保護程式啟動。支援觸發器和非觸發器工作階段。\n\n如果沒有正在進行的工作階段，熱鍵將為非觸發器工作階段開啟/關閉「允許螢幕保護程式」偏好設定。";
+
+
+
+
+// ---------------------------------------------------------------------------
+// ----- PREFERENCES WINDOW → NOTIFICATIONS TAB
+// ---------------------------------------------------------------------------
+
+// PREFERENCES WINDOW TOOLBAR ITEM LABEL
+"prefs_tb_notif" = "通知";
+
+// PREFERENCES → NOTIFICATIONS BUTTONS
+"pref_notif_bttn_session_reminders_pt1" = "每";
+"pref_notif_bttn_session_reminders_pt2" = "分鐘提醒";
+"pref_notif_bttn_trig_autostart" = "觸發器/排程工作階段自動開始時通知";
+"pref_notif_bttn_trig_autoend" = "觸發器/排程工作階段自動結束時通知";
+"pref_notif_bttn_sound_remind" = "與工作階段提醒/其他通知一起播放";
+"pref_notif_bttn_sound_startend" = "任何工作階段開始或結束時播放";
+"pref_notif_bttn_sound_extend" = "任何工作階段延長時播放";
+"pref_notif_bttn_cdm_play_warning" = "播放關閉顯示器警告音";
+"pref_notif_bttn_cdm_repeat_warning" = "每";
+"pref_notif_bttn_cdm_change_vol" = "暫時將系統音量設定為";
+"pref_notif_bttn_cdm_change_vol_message" = "啟用此功能將導致警告音從預設音訊輸出而不是音效輸出播放。";
+"pref_notif_bttn_notif_remove" = "傳送後移除通知";
+
+// PREFERENCES → NOTIFICATIONS LABELS
+"pref_notif_lbl_sound_start" = "工作階段開始/提醒：";
+"pref_notif_lbl_sound_end" = "工作階段結束：";
+"pref_notif_lbl_session_reminders" = "工作階段提醒：";
+"pref_notif_lbl_trig_sched" = "觸發器/排程：";
+"pref_notif_lbl_sound" = "音效：";
+"pref_notif_lbl_cdm" = "關閉顯示器模式：";
+"pref_notif_lbl_notif_center" = "通知中心：";
+
+// PREFERENCES → NOTIFICATIONS MENU ITEMS
+"pref_notif_mi_default_sound" = "預設系統音效";
+
+// ---------------------------------------------------------------------------
+// (?) BUTTON MENU ITEMS
+
+// ----- PREFERENCES → NOTIFICATIONS → Session Reminders Help Message
+
+// Title
+"help_message_session_reminders_title" = "工作階段提醒";
+
+// Body
+"help_message_session_reminders_body" = "勾選此方塊，讓Amphetamine在任何工作階段執行期間定期傳送通知/提醒。";
+
+// ----- PREFERENCES → NOTIFICATIONS → Triggers/Scheduled Help Message
+
+// Title
+"help_message_triggers_scheduled_title" = "觸發器/排程";
+
+// Body ** NOTE: DO NOT REMOVE '\n' **
+"help_message_triggers_scheduled_body" = "勾選這些方塊，讓Amphetamine在任何工作階段自動開始或結束時傳送通知。這包括觸發器工作階段、排程工作階段和一些定時工作階段。\n\n透過點擊選單列中的Amphetamine圖示或從Amphetamine選單中選取選項手動開始或結束的工作階段將不會導致傳送通知。";
+
+// ----- PREFERENCES → NOTIFICATIONS → Sound Help Message
+
+// Title
+"help_message_sound_title" = "音效";
+
+// Body ** NOTE: DO NOT REMOVE '\n' **
+"help_message_sound_body" = "•與工作階段提醒/其他通知一起播放\n如果您希望在傳送通知時播放音效，請勾選此方塊。\n\n•任何工作階段開始或結束時播放\n勾選此方塊，讓音效在任何工作階段開始或結束時播放。\n\n•任何工作階段延長時播放\n勾選此方塊，讓音效在工作階段延長時播放。\n\n要新增自訂音效，請點擊+按鈕並選取一個音效檔案。要移除自訂音效，請點擊−按鈕。一個Finder視窗將開啟到儲存自訂檔案的目錄。透過將音效檔案拖到垃圾桶或使用Command+Delete鍵盤組合在Finder中刪除音效檔案。";
+
+// ----- PREFERENCES → NOTIFICATIONS → Closed-Display Mode Help Message
+
+// Title
+"help_message_closed_display_notif_title" = "關閉顯示器模式";
+
+// Body ** NOTE: DO NOT REMOVE '\n' **
+"help_message_closed_display_notif_body" = "•播放關閉顯示器模式警告音\n勾選此方塊，讓音效在您的Mac進入關閉顯示器模式時播放。如果您的Mac的電源轉換器和外部顯示器已連接，則警告音不會播放。\n\n•每...重複音調\n勾選此方塊並選取一個間隔，如果您希望關閉顯示器模式警告音重複播放。\n\n•暫時將系統音量設定為...\n勾選此方塊並選取一個音量等級，如果您希望Amphetamine在播放關閉顯示器警告音之前調整您的Mac的系統音量等級。如果您的Mac的系統音量等級設定得太低，您可能聽不到音調。如果您的Mac的系統音量等級設定得太高，音調可能會很刺耳。啟用此功能時，如果系統音量等級設定低於或高於關閉顯示器警告音的目標等級，Amphetamine都會調整您的Mac的系統音量等級。播放關閉顯示器警告音後，您的Mac的原始系統音量等級將被還原。";
+
+// ----- PREFERENCES → NOTIFICATIONS → Notification Center Help Message
+
+// Title
+"help_message_notif_center_title" = "通知中心";
+
+// Body
+"help_message_notif_center_body" = "勾選此方塊，讓Amphetamine自動清理其在通知中心的通知。這將有助於減少通知混亂，尤其是在您啟用工作階段提醒時。";
+
+
+
+
+// ---------------------------------------------------------------------------
+// ----- PREFERENCES WINDOW → APPEARANCE TAB
+// ---------------------------------------------------------------------------
+
+// PREFERENCES WINDOW TOOLBAR ITEM LABEL
+"prefs_tb_appr" = "外觀";
+
+// PREFERENCES → APPEARANCE BUTTONS
+"pref_appr_bttn_image_low_opac" = "非使用中時使用低不透明度";
+"pref_appr_bttn_image_padd" = "手動管理選單列圖像的邊距";
+"pref_appr_bttn_text_show_time" = "在選單列中顯示工作階段剩餘時間";
+"pref_appr_bttn_text_24hr_clock" = "使用24小時制";
+"pref_appr_bttn_text_incl_secs" = "包含秒數";
+"pref_appr_bttn_show_curr_sess" = "顯示目前工作階段詳細資訊";
+"pref_appr_bttn_show_drive_alive" = "顯示Drive Alive詳細資訊";
+
+// PREFERENCES → APPEARANCE LABELS
+"pref_appr_lbl_image" = "選單列圖像：";
+"pref_appr_lbl_text" = "選單列文字：";
+"pref_appr_lbl_xtra" = "選單附加項目：";
+
+// ** NOTE: DO NOT REMOVE '\n' **
+"pref_appr_lbl_cust_icon_inst" = "將您的圖像檔案拖放到下面的區域。為獲得最佳效果，\n應僅使用具有透明背景的二進位圖像。";
+
+"pref_appr_lbl_cust_icon_inact" = "非使用中";
+"pref_appr_lbl_cust_icon_act" = "使用中";
+"pref_appr_lbl_cust_icon_inact_inst" = "此圖像將在Amphetamine未保持您的Mac喚醒時顯示。";
+"pref_appr_lbl_cust_icon_act_inst" = "此圖像將在Amphetamine正在保持您的Mac喚醒時顯示。";
+"pref_appr_lbl_cust_icon_get_more" = "取得更多圖像...";
+
+
+// PREFERENCES → APPEARANCE MENU ITEMS
+"pref_appr_mi_cust_image" = "自訂圖像...";
+"pref_appr_mi_image_pill" = "藥丸";
+"pref_appr_mi_image_pill_out" = "藥丸(外框)";
+"pref_appr_mi_image_molecule" = "分子";
+"pref_appr_mi_image_coffee_pot" = "咖啡壺";
+"pref_appr_mi_image_caffeine" = "咖啡因";
+"pref_appr_mi_image_cup" = "咖啡杯";
+"pref_appr_mi_image_teapot" = "茶壺";
+"pref_appr_mi_image_owl" = "貓頭鷹";
+"pref_appr_mi_image_eye" = "眼睛";
+"pref_appr_mi_image_sun_moon" = "太陽與月亮";
+"pref_appr_mi_image_emoji" = "表情符號";
+"pref_appr_mi_text_normal_sz" = "標準字體大小";
+"pref_appr_mi_text_small_sz" = "小字體大小";
+"pref_appr_mi_text_format_normal" = "標準格式(08:15)";
+"pref_appr_mi_text_format_letter" = "字母標記法格式(8h 15m)";
+
+
+
+
+// ---------------------------------------------------------------------------
+// (?) BUTTON MENU ITEMS
+
+// ----- PREFERENCES → APPEARANCE → Menu Bar Image Help Message
+
+// Title
+"help_message_menu_bar_image_title" = "選單列圖像";
+
+// Body ** NOTE: DO NOT REMOVE '\n' **
+"help_message_menu_bar_image_body" = "選擇您希望在選單列中顯示的圖像，以表示Amphetamine的工作階段狀態(使用中/非使用中)。當工作階段開始或結束時，選單列中的Amphetamine圖像將相應更新。\n\n或者，提供您自己的自訂圖像。";
+
+// ----- PREFERENCES → APPEARANCE → Menu Bar Text Help Message
+
+// Title
+"help_message_menu_bar_text_title" = "選單列文字";
+
+// Body ** NOTE: DO NOT REMOVE '\n' **
+"help_message_menu_bar_text_body" = "•在選單列中顯示工作階段剩餘時間\n如果您希望工作階段的剩餘時間或結束時間與Amphetamine的圖像一起顯示在選單列中，請勾選此方塊。\n\n選擇其他格式選項，例如選單列中文字的大小、時間的表示方式、是否包含秒數，以及是否以12或24小時格式表示時間。";
+
+// ----- PREFERENCES → APPEARANCE → Menu Bar Extras Help Message
+
+// Title
+"help_message_menu_extras_title" = "選單附加項目";
+
+// Body ** NOTE: DO NOT REMOVE '\n' **
+"help_message_menu_extras_body" = "•顯示目前工作階段詳細資訊\n勾選此方塊以在Amphetamine的選單中顯示工作階段詳細資訊，例如工作階段的持續時間/剩餘時間和啟動原因。\n\n•顯示Drive Alive詳細資訊\n勾選此方塊以顯示Drive Alive詳細資訊，例如哪些磁碟機正在保持喚醒，哪些沒有。";
+
+
+
+
+// ---------------------------------------------------------------------------
+// ----- PREFERENCES WINDOW → STATISTICS TAB
+// ---------------------------------------------------------------------------
+
+// PREFERENCES WINDOW TOOLBAR ITEM LABEL
+"prefs_tb_stat" = "統計資料";
+
+// PREFERENCES → STATISTICS BUTTONS
+"pref_stat_bttn_reset" = "重設統計資料";
+"pref_stat_bttn_enable" = "啟用統計資料收集";
+
+// PREFERENCES → STATISTICS LABELS
+"pref_stat_lbl_how_long_title" = "Amphetamine已讓您的Mac保持喚醒"; // v5.0.1
+"pref_stat_lbl_how_long_about" = "\n%@ %@ %@ %@"; // v5.0.1
+"pref_stat_lbl_how_long_prefs" = "%@ %@ %@ %@"; // v5.0.1
+"pref_stat_lbl_average" = "平均工作階段持續時間";
+"pref_stat_lbl_total_sessions" = "總工作階段數";
+
+
+
+
+// ---------------------------------------------------------------------------
+// ----- TRIGGER CONFIGURATION WINDOW + CRITERIA
+// ---------------------------------------------------------------------------
+
+// TRIGGER CONFIGURATION WINDOW
+"trig_config_lbl_name" = "名稱";
+"trig_config_lbl_name_placeholder" = "我的超棒觸發器";
+"trig_config_lbl_name_desc" = "給您的觸發器一個好記的名稱。您以後會感謝自己的。";
+"trig_config_lbl_criteria" = "條件";
+"trig_config_lbl_criteria_desc" = "您建立的每個觸發器最多可以使用每個條件的一個實例。所有條件都必須評估為真，您的觸發器才會啟動。";
+"trig_config_lbl_criteria_edit" = "按兩下條件以編輯條件";
+"trig_config_lbl_add_opt" = "其他選項";
+"trig_config_lbl_add_opt_desc" = "僅適用於此觸發器的其他選項。";
+"trig_config_bttn_disp_sleep" = "允許顯示器睡眠";
+"trig_config_bttn_cdm" = "顯示器關閉時允許系統睡眠";
+"trig_config_bttn_scrn_svr" = "之後允許螢幕保護程式執行：";
+
+// TABLE HEADERS
+"trig_config_tbl_head_criterion" = "條件";
+"trig_config_tbl_head_values" = "值";
+
+
+
+// ---------------------------------------------------------------------------
+// ----- TRIGGER CONFIGURATION HELP MESSAGE
+
+// Title
+"help_trigger_config_title" = "觸發器設定";
+
+// Body ** NOTE: DO NOT REMOVE '\n' **
+"help_trigger_config_body_13" = "名稱\n給您的觸發器一個好記的名稱。您的觸發器名稱將用於通知和Amphetamine選單的工作階段詳細資訊部分(如果您啟用了這些設定)。\n\n條件\n您的觸發器可以使用每個條件的一個實例。要新增一個新的條件，請點擊+按鈕，選取一個條件。要移除一個條件，請在「條件」表中選取該條件，然後點擊−按鈕。\n\n其他選項\n您建立的每個觸發器都可以獨立設定為允許或阻止顯示器睡眠、螢幕保護程式啟動，以及您的Mac在其顯示器關閉時是否睡眠。";
+
+"help_trigger_config_body" = "名稱\n給您的觸發器一個好記的名稱。您的觸發器名稱將用於通知和Amphetamine選單的工作階段詳細資訊部分(如果您啟用了這些偏好設定)。\n\n條件\n您的觸發器可以使用每個條件的一個實例。要新增一個新的條件，請點擊+按鈕，選取一個條件。要移除一個條件，請在「條件」表中選取該條件，然後點擊−按鈕。\n\n其他選項\n您建立的每個觸發器都可以獨立設定為允許或阻止顯示器睡眠、螢幕保護程式啟動，以及您的Mac在其顯示器關閉時是否睡眠。";
+
+
+
+
+// ---------------------------------------------------------------------------
+// ----- TRIGGER CRITERIA
+
+// TRIGGER CRITERIA → GLOBAL
+"trig_crit_bttn_add" = "新增條件";
+
+// example: "Selection: 'None selected' 
+"trig_crit_lbl_no_selection" = "未選取";
+"trig_crit_lbl_no_value" = "未提供值";
+
+// TRIGGER CRITERIA → WI-FI
+"trig_crit_name_wifi" = "Wi-Fi網路";
+"trig_crit_name_wifi_placeholder" = "Wi-Fi網路名稱";
+"trig_crit_bttn_wifi_get_current" = "取得目前Wi-Fi網路名稱";
+
+// TRIGGER CRITERIA → IP ADDRESS
+"trig_crit_name_ip" = "IP位址";
+"trig_crit_bttn_get_ip" = "取得目前IP位址";
+"trig_crit_bttn_use_range" = "使用IP位址範圍";
+"trig_crit_lbl_ip_start" = "開始範圍：";
+"trig_crit_lbl_ip_end" = "結束範圍：";
+"trig_crit_lbl_ip_addr" = "IP位址：";
+"trig_crit_lbl_ip_mutli" = "為此Mac找到了多個IP位址。選取您要用於此觸發器的IP位址，然後點擊下面的「繼續」。";
+"trig_crit_ip_tbl_head_type" = "介面/類型";
+"trig_crit_ip_tbl_head_addr" = "位址";
+
+// TRIGGER CRITERIA → DNS
+"trig_crit_name_dns" = "DNS伺服器";
+"trig_crit_dns_tbl_head" = "DNS伺服器";
+
+// TRIGGER CRITERIA → CISCO VPN SERVICE
+"trig_crit_name_vpn" = "Cisco AnyConnect VPN";
+"trig_crit_lbl_vpn_current" = "目前服務：";
+
+// ** NOTE: DO NOT REMOVE '\n' **
+"trig_crit_txtfd_vpn_message" = "此條件僅已知可與Cisco AnyConnect VPN用戶端搭配使用。在大多數情況下，如果您不使用Cisco AnyConnect，則應避免使用此條件。請改用IP位址條件的範圍功能。\n\n要使用此條件，請連接到您的VPN，然後點擊下面的↻按鈕。";
+
+// TRIGGER CRITERIA → APP
+"trig_crit_name_app" = "應用程式";
+"trig_crit_bttn_no_helpers" = "不顯示輔助應用程式或程序";
+"trig_crit_bttn_frontmost" = "要求應用程式為前景";
+"trig_crit_lbl_select_app" = "選取一個應用程式：";
+"trig_crit_lbl_when_frontmost" = "(前景時)"; // example: Safari '(when frontmost)'
+
+// TRIGGER CRITERIA → SCHEDULE
+"trig_crit_name_sched" = "排程";
+"trig_crit_lbl_sched_from" = "從：";
+"trig_crit_lbl_sched_until" = "直到：";
+"trig_crit_lbl_sched_no_select" = "未選取任何日期";
+
+// DAYS OF THE WEEK
+
+// IT IS IMPORTANT TO TRANSLATE THE DAYS OF THE WEEK IN THE CORRECT ORDER, AND NOT JUST TRANSLATE THE WORD/SPELLING OF THE DAY
+// FOR EXAMPLE, IN THE USA THE WEEK STARTS ON SUNDAY. THEREFORE, weekday_abbr_1 SHOULD EQUAL THE TARGET LANGUAGE TRANSLATION OF "Sun"
+// IN OTHER LOCALES, HOWEVER, THE WEEK STARTS ON MONDAY, AND THUS, weekday_abbr_1 = SHOULD EQUAL THE TARGET LANGUAGE TRANSLATION OF "Mon"
+
+// THERE IS LIMITED SPACE IN THE SEGMENTED CONTROL. PLEASE USE THE SHORTEST ABBREVIATION FOR EACH WEEKDAY NAME WHERE POSSIBLE
+
+"weekday_abbr_1" = "日";
+"weekday_abbr_2" = "一";
+"weekday_abbr_3" = "二";
+"weekday_abbr_4" = "三";
+"weekday_abbr_5" = "四";
+"weekday_abbr_6" = "五";
+"weekday_abbr_7" = "六";
+
+// TRIGGER CRITERIA → BATTERY & POWER ADAPTER
+"trig_crit_name_power" = "電池與電源轉換器";
+"trig_crit_lbl_batt_charge_min" = "電池電量至少為：";
+"trig_crit_lbl_batt_not_detected" = "未偵測到電池";
+"trig_crit_bttn_ac_connected" = "電源轉換器已連接";
+"trig_crit_bttn_ac_not_connected" = "電源轉換器未連接";
+"trig_crit_bttn_ac_connected_only" = "僅當電源轉換器連接時";
+"trig_crit_bttn_ac_not_connected_only" = "僅當電源轉換器未連接時";
+"trig_crit_lbl_batt_lvl_greater" = "電池電量≥%i%%"; // PLACEHOLDER IS A NUMBER + PERCENT SIGN, EXAMPLE: 'BATTERY CHARGE ≥ 15%'
+
+// TRIGGER CRITERIA → DISPLAYS
+"trig_crit_name_disp" = "顯示器";
+"trig_crit_mi_disp_equals" = "顯示器數量=";
+"trig_crit_mi_disp_greater" = "顯示器數量>";
+"trig_crit_mi_disp_less" = "顯示器數量<";
+"trig_crit_mi_disp_mirrored" = "主顯示器已鏡像";
+"trig_crit_bttn_ignore_built_in" = "忽略內建顯示器";
+
+//INDICATES AN EXTERNAL DISPLAY - i.e. NOT BUILT-IN
+"trig_crit_lbl_external" = "(外部)";
+
+// TRIGGER CRITERIA → VOLUMES/DRIVES
+"trig_crit_name_vols" = "卷宗/磁碟機";
+
+// TRIGGER CRITERIA → USB DEVICE
+"trig_crit_name_usb" = "USB裝置";
+
+// TRIGGER CRITERIA → BLUETOOTH DEVICE
+"trig_crit_name_bluetooth" = "藍牙裝置";
+
+// TRIGGER CRITERIA POPUP → AUDIO OUTPUT
+"trig_crit_name_audio" = "音訊輸出";
+"trig_crit_mi_audio_headphones" = "耳機";
+"trig_crit_mi_audio_bi_speakers" = "內建揚聲器";
+"trig_crit_mi_audio_bi_output" = "內建輸出";
+"trig_crit_mi_audio_headphones_35w" = "耳機(有線，3.5mm)";
+
+// TRIGGER CRITERIA POPUP → CPU
+"trig_crit_name_cpu" = "CPU使用率";
+"trig_crit_lbl_cpu" = "CPU使用率為：";
+"trig_crit_lbl_cpu_error" = "CPU錯誤";
+
+// TRIGGER CRITERIA POPUP → IDLE TIME
+"trig_crit_name_idle" = "系統閒置時間";
+"trig_crit_mi_idle_greater" = "閒置時間>";
+"trig_crit_mi_idle_less" = "閒置時間<";
+"trig_crit_lbl_idle_mins" = "分鐘";
+
+
+
+
+// ---------------------------------------------------------------------------
+// ----- TRIGGER CRITERIA HELP MESSAGES
+
+
+// ----- Criterion Wi-Fi Help Message
+
+// Title
+"criterion_help_wifi_title" = "Wi-Fi條件";
+
+// Body
+"criterion_help_wifi_body" = "此條件僅在您的Mac連接到指定的Wi-Fi網路時才會評估為真。在提供的欄位中輸入Wi-Fi網路的名稱(區分大小寫)，或使用按鈕自動取得您的Mac目前連接的網路名稱。";
+
+
+// ----- Criterion IP Address Help Message
+
+// Title
+"criterion_help_ip_title" = "IP位址條件";
+
+// Body
+"criterion_help_ip_body" = "此條件僅在您的Mac具有特定IP位址，或您的Mac的IP位址落在指定範圍內時才會評估為真。使用按鈕取得您Mac的目前IP位址，或手動輸入位址。";
+
+
+// ----- Criterion App Help Message
+
+// Title
+"criterion_help_app_title" = "應用程式條件";
+
+// Body
+"criterion_help_app_body" = "此條件僅在指定的應用程式正在您的Mac上執行時才會評估為真。清單中僅顯示目前正在執行的應用程式。如果應用程式未出現在清單中，則表示它目前未執行，或macOS的應用程式沙箱技術阻止Amphetamine與該應用程式互動。";
+
+
+// ----- Criterion Battery & Power Adapter Help Message
+
+// Title
+"criterion_help_power_title" = "電池與電源轉換器條件";
+
+// Body
+"criterion_help_power_body" = "此條件僅在您的Mac上滿足指定的電源條件時才會評估為真。";
+
+
+// ----- Criterion Schedule Help Message
+
+// Title
+"criterion_help_schedule_title" = "排程條件";
+
+// Body
+"criterion_help_schedule_body" = "此條件僅在您的Mac系統時鐘的目前時間和日期落在指定的時間和日期範圍內時才會評估為真。";
+
+
+// ----- Criterion Displays Help Message
+
+// Title
+"criterion_help_displays_title" = "顯示器條件";
+
+// Body ** NOTE: DO NOT REMOVE '\n' **
+"help_help_displays_body" = "此條件將在連接的顯示器數量等於、高於或低於您定義的數量時評估為真。或者，選擇顯示器鏡像，讓此條件僅在您的Mac主顯示器正在鏡像時評估為真。\n\n選取「忽略內建顯示器」選項，以在計算連接到您Mac的顯示器數量時忽略您的Mac內建顯示器。";
+
+
+// ----- Criterion Volume/Drive Help Message
+
+// Title
+"criterion_help_volume_title" = "卷宗/磁碟機條件";
+
+// Body
+"criterion_help_volume_body" = "此條件僅在指定的磁碟機或卷宗已掛載到您的Mac上時才會評估為真。要讓所需的磁碟機或卷宗出現在清單中，請確保它已掛載。";
+
+
+// ----- Criterion Audio Help Message
+
+// Title
+"criterion_help_audio_title" = "音訊輸出條件";
+
+// Body
+"criterion_help_audio_body_13" = "此條件僅在指定的音訊輸出設定為您Mac上的目前輸出時才會評估為真。\n\n可以透過前往→系統設定→聲音→輸出來設定音訊輸出。";
+
+"criterion_help_audio_body" = "此條件僅在指定的音訊輸出設定為您Mac上的目前輸出時才會評估為真。\n\n可以透過前往→系統偏好設定→聲音→輸出來設定音訊輸出。";
+
+
+
+// ----- Criterion Bluetooth Help Message
+
+// Title
+"criterion_help_bluetooth_title" = "藍牙裝置條件";
+
+// Body ** NOTE: DO NOT REMOVE '\n' **
+"criterion_help_bluetooth_body_13" = "此條件僅在指定的藍牙裝置連接到您的Mac時才會評估為真。清單中只會出現已與您的Mac配對的藍牙裝置。\n\n要配對新的藍牙裝置，請將您的裝置置於配對模式，然後前往→系統設定→藍牙。";
+
+"criterion_help_bluetooth_body" = "此條件僅在指定的藍牙裝置連接到您的Mac時才會評估為真。清單中只會出現已與您的Mac配對的藍牙裝置。\n\n要配對新的藍牙裝置，請將您的裝置置於配對模式，然後前往→系統偏好設定→藍牙。";
+
+
+
+// ----- Criterion Cisco AnyConnect VPN Help Message
+
+// Title
+"criterion_help_vpn_title" = "Cisco AnyConnect VPN條件";
+
+// Body ** NOTE: DO NOT REMOVE '\n' **
+"criterion_help_vpn_body" = "此條件僅在您的Mac連接到指定的VPN服務時才會評估為真。在您的Mac上啟動您的VPN服務，然後點擊重新整理按鈕以自動取得服務名稱。\n\n此條件有些實驗性，因為大多數VPN服務尚未經過測試。目前已知唯一相容的VPN服務是使用官方Cisco AnyConnect用戶端的Cisco AnyConnect VPN。";
+
+
+// ----- Criterion USB Help Message
+
+// Title
+"criterion_help_usb_title" = "USB裝置條件";
+
+// Body
+"criterion_help_usb_body" = "此條件僅在指定的USB裝置連接到您的Mac時才會評估為真。要讓所需的USB裝置出現在清單中，請將其連接到您的Mac並開啟電源。";
+
+
+// ----- Criterion CPU Utilization Help Message
+
+// Title
+"criterion_help_cpu_title" = "CPU使用率條件";
+
+// Body
+"criterion_help_cpu_body" = "此條件僅在您Mac中所有邏輯CPU的組合使用率高於或低於您設定的閾值時才會評估為真。請注意，Amphetamine的CPU使用率取樣可能不總是與「活動監視器」或其他能夠監控CPU使用率的應用程式相符。這可能是由於取樣率不同所致。";
+
+
+// ----- Criterion Idle Time Help Message
+
+// Title
+"criterion_help_idle_title" = "閒置時間條件";
+
+// Body ** NOTE: DO NOT REMOVE '\n' **
+"criterion_help_idle_body" = "此條件僅在您的Mac閒置時間時鐘高於或低於您設定的閾值(分鐘)時才會評估為真。當沒有鍵盤、滑鼠或其他輸入裝置活動時，您的Mac閒置時間時鐘通常會增加。\n\n請注意，透過遠端桌面或VNC/螢幕共享的滑鼠和鍵盤輸入不會阻止閒置時鐘增加。";
+
+
+// ----- Criterion DNS Server Help Message
+
+// Title
+"criterion_help_dns_title" = "DNS伺服器條件";
+
+// Body ** NOTE: DO NOT REMOVE '\n' **
+"criterion_help_dns_body_13" = "此條件將在您的Mac使用您指定的任何DNS伺服器/位址時評估為真。要將您的Mac目前使用的DNS位址新增到清單中，請點擊+按鈕。要從清單中移除DNS位址，請選取它，然後點擊−按鈕。\n\n如果您最近在「系統設定」中更新了您的DNS伺服器，或最近變更了網路設定，請等待幾分鐘，讓macOS將新的DNS伺服器更新到Amphetamine。\n\n注意：在某些情況下，此觸發器可能不會立即啟動。Amphetamine會查詢您Mac的目前DNS伺服器，但如果它們最近更新/變更了，macOS可能需要一兩分鐘才能將此變更回報給Amphetamine。";
+
+"criterion_help_dns_body" = "此條件將在您的Mac使用您指定的任何DNS伺服器/位址時評估為真。要將您的Mac目前使用的DNS位址新增到清單中，請點擊+按鈕。要從清單中移除DNS位址，請選取它，然後點擊−按鈕。\n\n如果您最近在「系統偏好設定」中更新了您的DNS伺服器，或最近變更了網路設定，請等待幾分鐘，讓macOS將新的DNS伺服器更新到Amphetamine。\n\n注意：在某些情況下，此觸發器可能不會立即啟動。Amphetamine會查詢您Mac的目前DNS伺服器，但如果它們最近更新/變更了，macOS可能需要一兩分鐘才能將此變更回報給Amphetamine。";
+
+
+
+
+// ---------------------------------------------------------------------------
+// ----- STATUS ITEM MENU
+// ---------------------------------------------------------------------------
+
+// CURRENT SESSION DETAILS VIEW MENU ITEM
+"csdv_lbl_title" = "目前工作階段詳細資訊：";
+"csdv_lbl_drive_alive_title" = "Drive Alive詳細資訊：";
+
+// REARRANGE THE BELOW PLACEHOLDERS (IF NEEDED) FOR THE TARGET LANGUAGE
+// IN ENGLISH, THE PLACEHOLDERS WOULD READ LIKE: "1h 3m 45s remaining"
+
+// %1$i = THE NUMBER OF HOURS REMAINING IN THE SESSION
+// %2$@ = duration_abbrv_hours_h
+// %3$02d = THE NUMBER OF MINUTES REMAINING IN THE SESSION
+// %4$@ = duration_abbrv_minutes_m
+// %5$02d = THE NUMBER OF MINUTES REMAINING IN THE SESSION
+// %6$@ = duration_abbrv_seconds_s
+// %7$@ = gen_use_remaining
+"csdv_time_remain_hms" = "剩餘%1$i%2$@ %3$02d%4$@ %5$02d%6$@";
+
+// %1$02d = THE NUMBER OF MINUTES REMAINING IN THE SESSION
+// %2$@ = duration_abbrv_minutes_m
+// %3$02d = THE NUMBER OF MINUTES REMAINING IN THE SESSION
+// %4$@ = duration_abbrv_seconds_s
+// %5$@ = gen_use_remaining
+"csdv_time_remain_ms" = "剩餘%1$02d%2$@ %3$02d%4$@";
+
+// %1$02d = THE NUMBER OF MINUTES REMAINING IN THE SESSION
+// %2$@ = duration_abbrv_seconds_s
+// %3$@ = gen_use_remaining
+"csdv_time_remain_s" = "剩餘%1$02d%2$@";
+
+"csdv_bttn_disp_sleep" = "允許顯示器睡眠";
+"csdv_bttn_cdm" = "顯示器關閉時允許系統睡眠";
+
+"csdv_drive_alive_not_enabled" = "Drive Alive未啟用";
+"csdv_drive_alive_not_config" = "未設定任何磁碟機";
+
+//MENU/STATUS BAR ITEM → MENU ITEMS
+"statbar_mi_start_new_session" = "開始新工作階段：";
+"statbar_mi_drive_alive_details" = "Drive Alive詳細資訊：";
+"statbar_mi_other_duration" = "其他時間/直到...";
+"statbar_mi_other_duration_BigSur" = "其他時間/直到";
+"statbar_mi_app" = "應用程式執行期間...";
+"statbar_mi_app_BigSur" = "應用程式執行期間";
+"statbar_mi_file" = "檔案下載期間...";
+
+"statbar_mi_qp_13" = "快速設定";
+"statbar_mi_prefs_13" = "設定...";
+
+"statbar_mi_qp" = "快速偏好設定";
+"statbar_mi_prefs" = "偏好設定...";
+
+"statbar_mi_about" = "關於Amphetamine";
+"statbar_mi_fb_support" = "意見回饋與支援";
+"statbar_mi_troubleshoot" = "疑難排解與常見問題";
+"statbar_mi_contact" = "聯絡支援";
+"statbar_mi_follow_dev" = "追蹤開發者"; // OPENS TWITTER LINK
+"statbar_mi_contribute" = "為Amphetamine的開發做出貢獻";
+"statbar_mi_quit" = "結束Amphetamine";
+
+
+
+
+// ---------------------------------------------------------------------------
+// ----- WELCOME WINDOW
+// ---------------------------------------------------------------------------
+
+// WELCOME WINDOW GLOBAL
+"ww_bttn_dont_show" = "不再顯示此視窗";
+"ww_bttn_previous" = "上一步";
+"ww_bttn_next" = "下一步";
+"ww_bttn_end" = "結束";
+
+// WELCOME WINDOW #1
+"ww1_lbl_welcome" = "歡迎使用Amphetamine";
+"ww1_lbl_credit" = "由William Gustafson用♥創作";
+
+// ** NOTE: DO NOT REMOVE '\n' **
+"ww1_lbl_message" = "\nAmphetamine是一款適用於macOS的超棒、功能強大且靈活的保持喚醒工具。\n即使有其所有的功能和選項，Amphetamine仍然非常易於使用。\n\n只需幾個簡單的步驟即可設定Amphetamine。點擊「下一步」開始。";
+
+// WELCOME WINDOW #2
+"ww2_lbl_title" = "Amphetamine在哪裡？";
+"ww2_lbl_subtitle" = "Amphetamine位於螢幕右上角的選單列中。";
+
+// ** NOTE: DO NOT REMOVE '\n' **
+"ww2_lbl_message_13" = "點擊選單列中的Amphetamine將顯示Amphetamine的選單。右鍵點擊(或control點擊)將開始或停止保持喚醒工作階段。如果您願意，可以在Amphetamine的「設定」中切換此行為。\n\nAmphetamine高度可自訂。您可以在Amphetamine的「設定」中變更各種東西，例如選單列圖像、通知何時出現以及播放什麼音效。";
+
+"ww2_lbl_message" = "點擊選單列中的Amphetamine將顯示Amphetamine的選單。右鍵點擊(或control點擊)將開始或停止保持喚醒工作階段。如果您願意，可以在Amphetamine的「偏好設定」中切換此行為。\n\nAmphetamine高度可自訂。您可以在Amphetamine的「偏好設定」中變更各種東西，例如選單列圖像、通知何時出現以及播放什麼音效。";
+
+
+"ww2_bttn_find_amph" = "點擊此處尋找Amphetamine";
+
+// WELCOME WINDOW #3
+"ww3_lbl_title" = "Amphetamine做什麼？";
+"ww3_lbl_subtitle" = "Amphetamine讓您的Mac保持喚醒。還有它的顯示器。還有它的磁碟機。";
+
+// ** NOTE: DO NOT REMOVE '\n' **
+"ww3_lbl_message_13_m" = "當Amphetamine讓您的Mac保持喚醒時，這稱為「工作階段」。要開始一個工作階段，請點擊選單列中的Amphetamine並選取一個工作階段持續時間。或者，右鍵/control點擊以使用預設持續時間開始一個工作階段。您可以在「設定」→「工作階段」中變更預設持續時間。\n\n如果您有MacBook，並希望在顯示器關閉時讓它保持喚醒，這稱為「關閉顯示器模式」工作階段。";
+
+"ww3_lbl_message_13" = "當Amphetamine讓您的Mac保持喚醒時，這稱為「工作階段」。要開始一個工作階段，請點擊選單列中的Amphetamine並選取一個工作階段持續時間。或者，右鍵/control點擊以使用預設持續時間開始一個工作階段。您可以在「設定」→「工作階段」中變更預設持續時間。\n\n如果您有MacBook，並希望在顯示器關閉時讓它保持喚醒，這稱為「關閉顯示器模式」工作階段。不過，強烈建議您安裝Amphetamine Enhancer作為故障安全措施。";
+
+"ww3_lbl_message" = "當Amphetamine讓您的Mac保持喚醒時，這稱為「工作階段」。要開始一個工作階段，請點擊選單列中的Amphetamine並選取一個工作階段持續時間。或者，右鍵/control點擊以使用預設持續時間開始一個工作階段。您可以在「偏好設定」→「工作階段」中變更預設持續時間。\n\n如果您有MacBook，並希望在顯示器關閉時讓它保持喚醒，這稱為「關閉顯示器模式」工作階段。不過，強烈建議您安裝Amphetamine Enhancer作為故障安全措施。";
+
+
+"ww3_bttn_learn_amph_enh" = "點擊此處了解更多關於Amphetamine Enhancer的資訊";
+
+// WELCOME WINDOW #4
+"ww4_lbl_title" = "Amphetamine還能做什麼？";
+"ww4_lbl_subtitle" = "Amphetamine能做的比您想像的要多得多。";
+
+// ** NOTE: DO NOT REMOVE '\n' **
+"ww4_lbl_message_13" = "觸發器根據Wi-Fi連線、電池電量、USB和藍牙裝置連線、一天中的時間、執行中的應用程式、IP位址等來自動化保持您的Mac喚醒。請前往Amphetamine的「設定」來設定您的第一個觸發器，或點擊下面的按鈕了解更多資訊。\n\nDrive Alive透過定期向連接到您Mac的磁碟機寫入少量資料來保持它們喚醒。請前往Amphetamine的「設定」來設定Drive Alive。";
+
+"ww4_lbl_message" = "觸發器根據Wi-Fi連線、電池電量、USB和藍牙裝置連線、一天中的時間、執行中的應用程式、IP位址等來自動化保持您的Mac喚醒。請前往Amphetamine的「偏好設定」來設定您的第一個觸發器，或點擊下面的按鈕了解更多資訊。\n\nDrive Alive透過定期向連接到您Mac的磁碟機寫入少量資料來保持它們喚醒。請前往Amphetamine的「偏好設定」來設定Drive Alive。";
+
+
+"ww4_bttn_learn_triggers" = "點擊此處了解更多關於觸發器的資訊";
+
+// WELCOME WINDOW #5
+"ww5_lbl_title" = "朋友，感謝您使用Amphetamine。";
+"ww5_lbl_subtitle" = "Amphetamine是愛的結晶。";
+
+// ** NOTE: DO NOT REMOVE '\n' **
+"ww5_lbl_message" = "Amphetamine是我送給您的禮物。我希望您覺得它有用、穩定且令人愉快。如果您能抽空在App Store留下您的評論，我將不勝感激。謝謝您。\n\n如果您在使用Amphetamine時遇到問題或有任何疑問，請點擊Amphetamine選單中的「意見回饋與支援」→「聯絡支援」與我聯絡。\n\nWilliam Gustafson\nAmphetamine創作者";
+
+
+
+
+// ---------------------------------------------------------------------------
+// ----- ABOUT WINDOW
+// ---------------------------------------------------------------------------
+
+// ** NOTE: DO NOT REMOVE '\n' **
+"about_lbl_message" = "Amphetamine是我的第一個Objective-C專案。自Amphetamine於2014年首次發布以來，它已成長為保持Mac喚醒的最強大、最受歡迎的應用程式之一。您的建議、意見回饋和支持是推動其成長的動力。謝謝您。\n\nAmphetamine將永遠是一款100%免費的應用程式，沒有廣告、應用程式內購買或付費升級。\n\nAmphetamine謹獻給我已故的朋友Isaac Kirkman。\n\nWilliam Gustafson\nAmphetamine創作者";
+"about_lbl_hard_work" = "🥵製作Amphetamine是件辛苦的工作！🥵";
+"about_bttn_support" = "聯絡支援";
+"about_bttn_rate" = "在App Store中評分";
+"about_bttn_ack" = "致謝";
+"about_bttn_learn_more" = "了解更多";
+
+
+
+
+// ---------------------------------------------------------------------------
+// ----- QUICK PREFERENCES
+// ---------------------------------------------------------------------------
+
+"qp_lbl_about_13" = "「快速設定」項目代表「設定」中對應項目的狀態，不一定代表目前工作階段。";
+"qp_lbl_about" = "「快速偏好設定」項目代表「偏好設定」中對應項目的狀態，不一定代表目前工作階段。";
+
+"qp_lbl_nt_sess" = "工作階段預設值";
+"qp_lbl_all_sess" = "系統控制";
+"qp_lbl_other" = "其他";
+
+// PLACEHOLDER REPRESENTS A BATTER CHARGE LEVEL, EXAMPLE: 'END SESSION IF BATTERY IS BELOW 15%'
+"qp_bttn_end_sess_low_batt_title" = "如果電池電量低於%@，則結束工作階段";
+"qp_bttn_end_sess_ac_discon_title" = "如果未連接電源轉換器，則結束工作階段";
+
+// PLACEHOLDERS REPRESENT A TIME DURATION, EXAMPLE: 'LOCK SCREEN AFTER 1h 15m OF INACTIVITY'
+"qp_bttn_lck_scrn_title" = "閒置%01ld%@後鎖定螢幕";
+"qp_bttn_mv_cursor_title" = "閒置%01ld%@後移動游標";
+
+// ----- Quick Preferences Help Message
+
+// Title
+"help_quick_prefs_title_13" = "快速設定";
+"help_quick_prefs_title" = "快速偏好設定";
+
+// Body ** NOTE: DO NOT REMOVE '\n' **
+"help_quick_prefs_body_13" = "「快速設定」中的每個選單項目都連結到Amphetamine「設定」中的對應項目。\n\n請務必注意，「快速設定」中項目的狀態可能不反映目前工作階段的行為。對於觸發器工作階段尤其如此。\n\n目前工作階段的行為可以使用「目前工作階段詳細資訊」選單項目即時變更/覆寫。要開啟/關閉「目前工作階段詳細資訊」選單項目，請前往「設定」→「外觀」→「選單附加項目」。";
+
+"help_quick_prefs_body" = "「快速偏好設定」中的每個選單項目都連結到Amphetamine「偏好設定」中的對應項目。\n\n請務必注意，「快速偏好設定」中項目的狀態可能不反映目前工作階段的行為。對於觸發器工作階段尤其如此。\n\n目前工作階段的行為可以使用「目前工作階段詳細資訊」選單項目即時變更/覆寫。要開啟/關閉「目前工作階段詳細資訊」選單項目，請前往「偏好設定」→「外觀」→「選單附加項目」。";
+
+
+
+
+// ---------------------------------------------------------------------------
+// ----- OTHER HELP MESSAGES
+// ---------------------------------------------------------------------------
+
+// ----- Screen Saver Exceptions Help Message
+
+// Title
+"help_screen_saver_exceptions_title" = "螢幕保護程式例外";
+
+// Body ** NOTE: DO NOT REMOVE '\n' **
+"help_screen_saver_exceptions_body" = "如果此表中的任何應用程式或程序正在執行，它將阻止Amphetamine啟動您Mac的螢幕保護程式。\n\n點擊+按鈕將應用程式或程序新增到此表中。在表中選取一個應用程式，然後點擊−按鈕將其移除。\n\n如果您沒有看到您要尋找的應用程式或程序，則表示它目前未執行，或macOS的應用程式沙箱技術阻止Amphetamine看到該應用程式/程序。";
+
+
+// ----- Apps & Processes Picker Help Message
+
+// Title
+"help_app_picker_title" = "應用程式與程序";
+
+// Body ** NOTE: DO NOT REMOVE '\n' **
+"help_app_picker_body" = "要在此清單中看到應用程式或程序，它必須正在執行。使用「不顯示輔助應用程式或程序」核取方塊來篩選清單，以包含或排除輔助應用程式/程序。輔助應用程式和程序可能沒有使用者介面，且通常在背景中靜默執行。\n\n如果您在清單中沒有看到應用程式/程序，則表示它未執行，或Amphetamine被macOS的應用程式沙箱技術阻止觀察該應用程式/程序。要解決應用程式沙箱的限制，您需要安裝Amphetamine Enhancer。\n\n如果您已安裝Amphetamine Enhancer但仍未看到您想要的應用程式/程序(且您確定它正在執行)，請等待最多10秒，然後點擊搜尋欄位右側的↻按鈕重新整理應用程式/程序清單。";
+
+// ----- CLOSED DISPLAY MODE WARNING
+
+// Title
+"cdm_warning_title" = "關於關閉顯示器模式工作階段";
+
+// Body ** NOTE: DO NOT REMOVE '\n' **
+"cdm_warning_body_13" = "•電源狀態\n如果在工作階段期間將您的Mac重新連接到外部電源/轉換器，關閉顯示器模式工作階段可能會失敗。此問題不會影響所有Mac，且Amphetamine無法偵測工作階段是否真的失敗。\n\n•過熱與電池耗盡\n如果您忘記關閉顯示器模式工作階段正在進行中，您的Mac可能會在袋子/保護套中輕易過熱，或電池可能會完全耗盡。請考慮在「設定」→「通知」中啟用關閉顯示器模式警告。\n\n•Amphetamine Enhancer故障安全\n如果在關閉顯示器模式工作階段期間Amphetamine當機，您的Mac可能無法恢復正常的睡眠行為，直到您重新啟動Amphetamine或重新啟動您的Mac。強烈建議您安裝Amphetamine Enhancer作為故障安全措施。";
+
+"cdm_warning_body" = "•電源狀態\n如果在工作階段期間將您的Mac重新連接到外部電源/轉換器，關閉顯示器模式工作階段可能會失敗。此問題不會影響所有Mac，且Amphetamine無法偵測工作階段是否真的失敗。\n\n•過熱與電池耗盡\n如果您忘記關閉顯示器模式工作階段正在進行中，您的Mac可能會在袋子/保護套中輕易過熱，或電池可能會完全耗盡。請考慮在「偏好設定」→「通知」中啟用關閉顯示器模式警告。\n\n•Amphetamine Enhancer故障安全\n如果在關閉顯示器模式工作階段期間Amphetamine當機，您的 Mac可能無法恢復正常的睡眠行為，直到您重新啟動Amphetamine或重新啟動您的Mac。強烈建議您安裝Amphetamine Enhancer作為故障安全措施。";
+
+
+// ----- FAILED CLOSED DISPLAY MODE SESSION WARNING
+
+// Title
+"cdm_fail_warning_title" = "可能的關閉顯示器模式工作階段失敗";
+
+// Body ** NOTE: DO NOT REMOVE '\n' **
+"cdm_fail_warning_body" = "由於連接了外部電源/轉換器，關閉顯示器模式工作階段可能已失敗。\n\n由於macOS的限制，Amphetamine無法偵測工作階段是否真的失敗。如果您確信您的Mac不受此問題影響，您可以在下面停用此功能。\n\nAmphetamine已自動終止正在執行的關閉顯示器模式工作階段。如果您停用此功能，未來的關閉顯示器模式工作階段將不會自動終止。";
+
+// ----- FAILED CLOSED DISPLAY MODE SESSION WARNING SUPPRESSION
+"cdm_fail_warning_suppression" =  "停用自動關閉顯示器模式工作階段終止";
+
+
+// ----- TRIGGER SESSION WARNING
+
+// USED IN SENTENCES, SEE PLACEHOLDER %@ IN KEY sess_is_trigger_body FOR EXAMPLE USAGE
+// OTHER EXAMPLE: IF YOU WOULD LIKE TO 'ALLOW' / 'PREVENT' THE DISPLAY TO SLEEP
+"gen_use_allow" = "允許";
+"gen_use_prevent" = "阻止";
+
+// USED IN SENTENCES, SEE PLACEHOLDER %@ IN KEY sess_is_trigger_body FOR EXAMPLE USAGE
+// OTHER EXAMPLE: YOU NEED TO 'CHECK' / 'UNCHECK' THE BOX TO ENABLE THIS FEATURE
+"gen_use_check" = "勾選";
+"gen_use_uncheck" = "取消勾選";
+
+// ----- SESSION IS TRIGGER
+"sess_is_trigger_ds_bttn_title" = "允許顯示器睡眠";
+"sess_is_trigger_ds_feature" = "顯示器睡眠";
+
+"sess_is_trigger_ss_bttn_title" = "允許螢幕保護程式";
+"sess_is_trigger_ss_feature" = "螢幕保護程式啟動";
+
+"sess_is_trigger_cdm_feature" = "關閉顯示器睡眠";
+"sess_is_trigger_cdm_bttn_title" = "顯示器關閉時允許系統睡眠";
+
+// Title
+"sess_is_trigger_title" = "目前工作階段是觸發器工作階段";
+
+// PLACEHOLDERS MAY BE EITHER THE FEATURE, TITLE, CHECK/UNCHECK, OR ALLOW/PREVENT KEYS LISTED ABOVE. EXAMPLE:
+
+/*
+ "You have modified a preference that only applies to non-Trigger sessions.
+
+ Each Trigger has its own Allow Display Sleep(sess_is_trigger_ds_bttn_title) preference which can be changed by editing the Trigger. To edit a Trigger, go to Preferences → Triggers and double-click the Trigger you want to edit.
+
+ If you would like to temporarily allow (gen_use_allow) display sleep (sess_is_trigger_ds_feature) for the duration of this Trigger session, click Amphetamine's image in the menu bar and check (gen_use_check) the Allow Display Sleep (sess_is_trigger_ds_bttn_title) checkbox in the Current Session Details section of the menu.
+
+ If you don't see the Current Session Details section in Amphetamine's menu, go to Preferences → Appearance → Menu Extras and check the Show Session Details in Menu box.
+*/
+
+// Body ** NOTE: DO NOT REMOVE '\n' **
+"sess_is_trigger_body_13" = "您已修改一個僅適用於非觸發器工作階段的偏好設定。\n\n每個觸發器都有自己的%@偏好設定，可以透過編輯觸發器來變更。要編輯觸發器，請前往「設定」→「觸發器」，然後按兩下您要編輯的觸發器。\n\n如果您想在此觸發器工作階段期間暫時%@ %@，請點擊選單列中的Amphetamine圖示，然後在選單的「目前工作階段詳細資訊」部分%@ %@核取方塊。\n\n如果您在Amphetamine的選單中沒有看到「目前工作階段詳細資訊」部分，請前往「設定」→「外觀」→「選單附加項目」，然後勾選「在選單中顯示工作階段詳細資訊」方塊。";
+
+"sess_is_trigger_body" = "您已修改一個僅適用於非觸發器工作階段的偏好設定。\n\n每個觸發器都有自己的%@偏好設定，可以透過編輯觸發器來變更。要編輯觸發器，請前往「偏好設定」→「觸發器」，然後按兩下您要編輯的觸發器。\n\n如果您想在此觸發器工作階段期間暫時%@ %@，請點擊選單列中的Amphetamine圖示，然後在選單的「目前工作階段詳細資訊」部分%@ %@核取方塊。\n\n如果您在Amphetamine的選單中沒有看到「目前工作階段詳細資訊」部分，請前往「偏好設定」→「外觀」→「選單附加項目」，然後勾選「在選單中顯示工作階段詳細資訊」方塊。";
+
+
+// ----- LOCK SCREEN MESSAGE
+
+"lck_scrn_request_title" = "要鎖定螢幕，Amphetamine需要存取輔助功能。";
+
+// ** NOTE: DO NOT REMOVE '\n' **
+"lck_scrn_request_body_13" = "您可以在「系統設定」→「安全性與隱私權」→「隱私權」→「輔助功能」中授予Amphetamine存取輔助功能的權限。\n\n在「系統設定」中，點擊左下角的鎖頭圖示，並在出現提示時輸入您的Mac密碼。然後，在「安全性與隱私權」的「隱私權」標籤的「輔助功能」部分中，勾選Amphetamine旁邊的方塊。\n\n如果您在「輔助功能」清單中沒有看到Amphetamine，請點擊+按鈕，然後從「應用程式」資料夾中選取Amphetamine。\n\n授予Amphetamine存取輔助功能的權限後，請回到此處並再次嘗試啟用此功能。";
+
+"lck_scrn_request_body" = "您可以在「系統偏好設定」→「安全性與隱私權」→「隱私權」→「輔助功能」中授予Amphetamine存取輔助功能的權限。\n\n在「系統偏好設定」中，點擊左下角的鎖頭圖示，並在出現提示時輸入您的Mac密碼。然後，在「安全性與隱私權」的「隱私權」標籤的「輔助功能」部分中，勾選Amphetamine旁邊的方塊。\n\n如果您在「輔助功能」清單中沒有看到Amphetamine，請點擊+按鈕，然後從「應用程式」資料夾中選取Amphetamine。\n\n授予Amphetamine存取輔助功能的權限後，請回到此處並再次嘗試啟用此功能。";
+
+
+
+// ----- CURSOR MOVEMENT MESSAGE
+
+"move_cursor_request_title" = "要移動游標，Amphetamine需要存取輔助功能。";
+
+"move_cursor_request_body_13" = "您可以在「系統設定」→「安全性與隱私權」→「隱私權」→「輔助功能」中授予Amphetamine存取輔助功能的權限。\n\n在「系統設定」中，點擊左下角的鎖頭圖示，並在出現提示時輸入您的Mac密碼。然後，在「安全性與隱私權」的「隱私權」標籤的「輔助功能」部分中，勾選Amphetamine旁邊的方塊。\n\n如果您在「輔助功能」清單中沒有看到Amphetamine，請點擊+按鈕，然後從「應用程式」資料夾中選取Amphetamine。\n\n授予Amphetamine存取輔助功能的權限後，請回到此處並再次嘗試啟用此功能。";
+
+"move_cursor_request_body" = "您可以在「系統偏好設定」→「安全性與隱私權」→「隱私權」→「輔助功能」中授予Amphetamine存取輔助功能的權限。\n\n在「系統偏好設定」中，點擊左下角的鎖頭圖示，並在出現提示時輸入您的Mac密碼。然後，在「安全性與隱私權」的「隱私權」標籤的「輔助功能」部分中，勾選Amphetamine旁邊的方塊。\n\n如果您在「輔助功能」清單中沒有看到Amphetamine，請點擊+按鈕，然後從「應用程式」資料夾中選取Amphetamine。\n\n授予Amphetamine存取輔助功能的權限後，請回到此處並再次嘗試啟用此功能。";
+
+
+
+// ----- WHILE FILE IS DOWNLOADING MESSAGE
+
+"file_dwnld_title" = "逾時";
+
+"file_dwnld_body" = "選擇檔案下載的逾時時間。如果檔案在逾時期間內沒有變更或增加大小，工作階段將結束。";
+
+
+
+// ---------------------------------------------------------------------------
+// ----- DIALOGS
+// ---------------------------------------------------------------------------
+
+// BUTTON TITLE, USED TO CONFIRM SELECTION OF ITEM
+"dialog_select_bttn_title" = "選取";
+
+// CUSTOM SOUND FILE DIALOG MESSAGE
+"dialog_sound_select" = "請選擇您要新增到Amphetamine的音效：";
+
+// drive
+"dialog_drivealive_select" = "請選擇您要保持喚醒的磁碟機：";
+
+
+
+
+// ---------------------------------------------------------------------------
+// ----- ALERTS
+// ---------------------------------------------------------------------------
+
+// ---------------------------------------------------------------------------
+// ALERT BUTTON LABELS/TITLES
+
+"alert_ok_button_title" = "好";
+"alert_get_amph_enhancer_button_title" = "取得Amphetamine Enhancer";
+"alert_dont_show_type_again" = "不再顯示此類訊息";
+"alert_dont_show_again" = "不再顯示此訊息";
+"alert_dont_ask_again" = "不再詢問";
+
+"alert_open_sys_prefs_13" = "開啟系統設定";
+"alert_open_sys_prefs" = "開啟系統偏好設定";
+
+// GENERIC ERROR MESSAGE
+"error_generic_went_wrong_title" = "糟糕。發生錯誤。";
+"error_generic_went_wrong_body" = "請再試一次。如果問題仍然存在，您可以在iffy.freshdesk.com提交支援請求。";
+
+// TRIGGER EDIT ERROR MESSAGE // v5.0.1
+"error_trigger_edit_title" = "無法編輯此觸發器。";
+"error_trigger_edit_body" = "請再試一次。如果問題仍然存在，請移除觸發器並重新建立它。如果您無法重新建立觸發器，請在iffy.freshdesk.com提交支援請求。";
+
+// ----- SCREEN SAVER FOR TRIGGER ALERT
+"alert_trig_scn_svr_bttn_enable" = "啟用螢幕保護程式";
+
+"alert_trig_scn_svr_title" = "此觸發器未設定為允許螢幕保護程式。";
+
+"alert_trig_scn_svr_body_13" = "雖然此觸發器未設定為允許螢幕保護程式，但您可以為此工作階段允許螢幕保護程式。要設定此觸發器一律允許螢幕保護程式，請前往「設定」→「觸發器」，然後按兩下觸發器進行編輯。\n\n否則，要僅為此工作階段允許螢幕保護程式，請在下面選擇一個延遲時間，然後點擊「啟用螢幕保護程式」。";
+
+"alert_trig_scn_svr_body" = "雖然此觸發器未設定為允許螢幕保護程式，但您可以為此工作階段允許螢幕保護程式。要設定此觸發器一律允許螢幕保護程式，請前往「偏好設定」→「觸發器」，然後按兩下觸發器進行編輯。\n\n否則，要僅為此工作階段允許螢幕保護程式，請在下面選擇一個延遲時間，然後點擊「啟用螢幕保護程式」。";
+
+
+// ----- DRIVE ALIVE SANDBOX ALERT
+"alert_drivealive_tech_det_title" = "一些技術細節...";
+
+// PLACEHOLDER IS NAME OF DRIVE
+"alert_drivealive_tech_det_body" = "macOS的應用程式沙箱技術阻止Amphetamine寫入安裝macOS的磁碟機的根目錄。\n\nAmphetamine仍然可以保持此磁碟機喚醒，但會將資料寫入以下路徑：\n\n%@";
+
+"alert_drivealive_net_vol_title" = "偵測到網絡卷宗";
+"alert_drivealive_net_vol_body" = "您選取的磁碟機/卷宗似乎是網路或非本機卷宗。請注意，如果與此卷宗的連線遺失或無法使用，Amphetamine可能會變得沒有回應。";
+
+// ----- APP PICK ERROR
+"alert_app_select_title" = "發生錯誤。";
+"alert_app_select_body" = "您可能沒有選取應用程式，或者您選取的應用程式可能已結束。請選取其他應用程式或重新啟動您先前選取的應用程式。";
+
+// ----- APPLESCRIPT ERROR
+"alert_applescript_fail_title" = "發生錯誤。";
+"alert_applescript_fail_title" = "Amphetamine無法理解從AppleScript收到的訊息";
+
+// ----- LOCK SCREEN FAILURE
+"alert_lck_scrn_fail_title" = "Amphetamine無法鎖定螢幕。";
+
+"alert_lck_scrn_fail_body_13" = "請前往「設定」→「系統控制」以重新啟用此功能。";
+"alert_lck_scrn_fail_body" = "請前往「偏好設定」→「系統控制」以重新啟用此功能。";
+
+// ----- DEFAULT DURATION
+"alert_dd_less_one_min_title" = "預設持續時間不能少於一分鐘。";
+"alert_dd_less_one_min_body" = "預設持續時間已變更為最小值0小時1分鐘。";
+
+// ----- CUSTOM STATUS/MENU BAR ITEM IMAGE MISSING OR NOT FOUND
+"cust_img_not_found_title" = "找不到自訂圖像。";
+"cust_img_not_found_body" = "需要兩個自訂圖像(使用中和非使用中)。將使用預設圖像。";
+
+// ----- CUSTOM STATUS/MENU BAR ITEM IMAGE SAVE ERROR
+"cust_img_save_err_title" = "無法儲存圖像。";
+"cust_img_save_err_body" = "發生未知錯誤。將使用預設圖像。";
+
+// ----- RESET PREFERENCES CONFIRMATION
+"prefs_reset_conf_title_13" = "您確定要重設Amphetamine的設定嗎？";
+"prefs_reset_conf_body_13" = "所有設定都將重設為其預設值，您將遺失所有觸發器和Drive Alive設定。";
+
+"prefs_reset_conf_title" = "您確定要重設Amphetamine的偏好設定嗎？";
+"prefs_reset_conf_body" = "所有偏好設定都將重設為其預設值，您將遺失所有觸發器和Drive Alive設定。";
+
+
+// ----- RESET WARNINGS & DIALOGS CONFIRMATION
+"warn_diag_reset_conf_title" = "成功重設警告與對話方塊。";
+"warn_diag_reset_conf_body" = "您已被警告。";
+
+// ----- IP ADDRESS CRITERIA MESSAGE
+"alert_no_ip_address_title" = "找不到IP位址。";
+"alert_no_ip_address_body" = "請再次檢查您的Mac是否可以連線到網際網路和/或具有有效的IP位址";
+
+// ----- DNS SERVER CRITERIA MESSAGE
+"dns_no_new_serv_title" = "找不到新的DNS伺服器。";
+
+"dns_no_new_serv_body_13" = "目前列出的DNS伺服器是macOS回報為正在使用的唯一伺服器。如果您最近在「系統設定」中更新了您的DNS伺服器，或變更了網路設定，請稍候幾分鐘再試一次。";
+
+"dns_no_new_serv_body" = "目前列出的DNS伺服器是macOS回報為正在使用的唯一伺服器。如果您最近在「系統偏好設定」中更新了您的DNS伺服器，或變更了網路設定，請稍候幾分鐘再試一次。";
+
+
+
+// ----- DRIVE ALIVE WRITE ERROR
+"drive_alive_write_err_title" = "發生錯誤。";
+"drive_alive_write_err_body" = "Amphetamine沒有權限將資料寫入此位置。這很可能是由於macOS的應用程式沙箱技術或卷宗的格式設定所致。\n\n您可以嘗試以下解決方法，但可能不會成功：\n\n在卷宗/磁碟機的根目錄建立一個新資料夾(可能會要求您輸入管理員使用者的密碼)。然後，選取該資料夾以與Drive Alive搭配使用。";
+
+// ----- DRIVE ALIVE NETWORK VOLUME PROMPT
+"alert_net_volume_title" = "網絡卷宗/磁碟機";
+
+// PLACEHOLDER IS NAME OF DRIVE
+"alert_net_volume_body" = "名為「%@」的卷宗/磁碟機是網路連接的卷宗嗎？正確回答此問題將有助於Amphetamine更有效率地執行。";
+
+// ----- BETA EXPIRATION
+"alert_beta_expired_title" = "此測試版已過期。";
+"alert_beta_expired_body" = "要取得Amphetamine的新測試版，請造訪github.com/x74353/AmphetamineBeta。Amphetamine現在將結束。";
+
+// ----- DISABLE TRIGGERS MESSAGE
+"alert_disable_trig_title" = "觸發器工作階段正在執行。";
+
+// PLACEHOLDER IS NAME OF TRIGGER
+"alert_disable_trig_body_13" = "結束此工作階段需要停用以下觸發器：\n\n%@\n\n您可以使用下面的按鈕停用所有觸發器，或前往Amphetamine的「設定」以停用此特定觸發器。您稍後可以隨時從Amphetamine的「設定」中重新啟用所有觸發器。";
+
+"alert_disable_trig_body" = "結束此工作階段需要停用以下觸發器：\n\n%@\n\n您可以使用下面的按鈕停用所有觸發器，或前往Amphetamine的「偏好設定」以停用此特定觸發器。您稍後可以隨時從Amphetamine的「偏好設定」中重新啟用所有觸發器。";
+
+"alert_disable_trig_bttn_disable" = "停用所有觸發器";
+"alert_disable_trig_bttn_suppress" = "下次自動停用所有觸發器";
+
+"alert_disable_trig_dur_indef" = "無限期停用";
+"alert_disable_trig_dur_5mins" = "停用5分鐘";
+"alert_disable_trig_dur_10mins" = "停用10分鐘";
+"alert_disable_trig_dur_15mins" = "停用15分鐘";
+"alert_disable_trig_dur_30mins" = "停用30分鐘";
+"alert_disable_trig_dur_45mins" = "停用45分鐘";
+"alert_disable_trig_dur_1hr" = "停用1小時";
+"alert_disable_trig_dur_2hrs" = "停用2小時";
+"alert_disable_trig_dur_3hrs" = "停用3小時";
+"alert_disable_trig_dur_4hrs" = "停用4小時";
+"alert_disable_trig_dur_5hrs" = "停用5小時";
+"alert_disable_trig_dur_6hrs" = "停用6小時";
+"alert_disable_trig_dur_7hrs" = "停用7小時";
+"alert_disable_trig_dur_8hrs" = "停用8小時";
+"alert_disable_trig_dur_9hrs" = "停用9小時";
+"alert_disable_trig_dur_10hrs" = "停用10小時";
+"alert_disable_trig_dur_12hrs" = "停用12小時";
+"alert_disable_trig_dur_24hrs" = "停用24小時";
+
+// ----- TRIGGER EVALUATION FAILED MESSAGE
+"alert_trigger_eval_fail_title" = "觸發器條件評估失敗。";
+"alert_trigger_eval_fail_body" = "嘗試評估您的觸發器「%@」的%@條件時發生錯誤。\n\n如果此問題經常再次發生，請嘗試刪除並重新建立此觸發器。";
+
+// ----- AMPHETAMINE 3 → 4/5 PREFERENCES CONVERSION
+"amph3_prefs_cnvrt_bttn_migrate" = "遷移";
+"amph3_prefs_cnvrt_bttn_reset" = "重設";
+"amph3_prefs_cnvrt_bttn_backup" = "備份";
+"amph3_prefs_cnvrt_bttn_quit" = "結束";
+
+"amph3_prefs_cnvrt_message_13" = "由於Amphetamine 5中的所有新功能，您的Amphetamine 3設定必須遷移或重設。如果您選擇「遷移」，Amphetamine將嘗試將您之前的所有設定(包括觸發器、Drive Alive設定、圖示、持續時間、熱鍵等)遷移到新的Amphetamine 5格式。\n\n當然，此操作存在一些風險。請謹慎遷移。如果您絕對不能遺失您的Amphetamine 3設定，請在嘗試遷移之前選擇「備份」。\n\n如果您寧願重新開始(對您有益！)，請選擇「重設」。如果您意外看到此訊息，只需點擊「重設」。";
+
+"amph3_prefs_cnvrt_backedup_13" = "Amphetamine的設定已備份。";
+"amph3_prefs_cnvrt_ask_13" = "現在將要求您遷移或重設設定。";
+
+"amph3_prefs_cnvrt_message" = "由於Amphetamine 5中的所有新功能，您的Amphetamine 3偏好設定必須遷移或重設。如果您選擇「遷移」，Amphetamine將嘗試將您之前的所有偏好設定(包括觸發器、Drive Alive設定、圖示、持續時間、熱鍵等)遷移到新的Amphetamine 5格式。\n\n當然，此操作存在一些風險。請謹慎遷移。如果您絕對不能遺失您的Amphetamine 3偏好設定，請在嘗試遷移之前選擇「備份」。\n\n如果您寧願重新開始(對您有益！)，請選擇「重設」。如果您意外看到此訊息，只需點擊「重設」。";
+
+"amph3_prefs_cnvrt_backedup" = "Amphetamine的偏好設定已備份。";
+"amph3_prefs_cnvrt_ask" = "現在將要求您遷移或重設偏好設定。";
+
+
+
+
+// ---------------------------------------------------------------------------
+// ----- NOTIFICATION MESSAGES
+// ---------------------------------------------------------------------------
+
+"notif_session_not_active" = "工作階段未進行中";
+"notif_amph_keep_awake" = "Amphetamine正在讓您的Mac保持喚醒";
+"notif_amph_trig_start" = "觸發器工作階段已開始";
+"notif_amph_trig_end" = "觸發器工作階段已結束";
+"notif_sleep_normal" = "您的Mac將按其正常排程睡眠";
+"notif_next_reminder_plural_int" = "下次提醒在%li分鐘後"; // PLACEHOLDER IS THE TIME UNTIL NEXT REMINDER, EXAMPLE: 'NEXT REMINDER IN 5 MINUTES'
+"notif_next_reminder_singular_int" = "下次提醒在%li分鐘後"; // PLACEHOLDER IS THE TIME UNTIL NEXT REMINDER, EXAMPLE: 'NEXT REMINDER IN 1 MINUTE'
+"notif_batt_no_ac" = "電池未連接電源轉換器";
+"notif_batt_charge_low" = "電池電量低於%li%%"; // PLACEHOLDER IS BATTERY CHARGE LEVEL, EXAMPLE: 'BATTERY CHARGE IS BELOW 15%'
+
+// THESE ARE USED TO INDICATE THE STATE OF EACH OPTION IN NOTIFICATIONS
+// SPACE IS EXTREMELY LIMITED IN NOTIFICATIONS, SO PLEASE ABBREVIATE WHERE POSSIBLE
+"notif_disp_sleep_state" = "顯示器睡眠："; // 🖥️ ✗ Display Sleep:
+"notif_scrn_svr_state" = "螢幕保護程式："; // 🌌 ✗ Screen Saver:
+"notif_cdm_state" = "CDM："; // CLOSED-DISPLAY MODE // 🐚 ✗ CDM
+
+// THESE ARE USED TO INDICATE THE STATE OF EACH OPTION IN NOTIFICATIONS
+// UNLESS THESE CHARACTERS DO NOT EQUATE TO ON/YES OFF/NO IN THE TARGET LANGUAGE, THESE SHOULD LIKELY NOT BE CHANGED/TRANSLATED
+"notif_state_prevented" = "✗"; // NO/OFF/PREVENTED, other potential symbols: 🚫 ✗
+"notif_state_allowed" = "✓"; // YES/ON/ALLOWED, other potential symbols: ✅ ✓
+
+// ----- REGULAR SESSION ENDED
+"generic_sess_end_1" = "工作階段已結束";
+
+// ----- APP SESSION ENDED NOTIFICATION
+
+// NOTE: DO NOT REMOVE '%@'; %@ IS PLACEHOLDER FOR APP NAME
+"app_sess_end_2" = "%@已不再執行"; // EXAMPLE: 'SAFARI' IS NO LONGER RUNNING
+
+// ----- UNTIL TIME SESSION ENDED NOTIFICATION
+
+// ** NOTE: DO NOT REMOVE %@ **
+"until_sess_end_1" = "定時工作階段已結束";
+"until_sess_end_2" = "結束時間(%@)已過"; // PLACEHOLDER IS A TIME, EXAMPLE: 'END TIME (5:00 PM) HAS PASSED'
+
+
+// ----- TIMED SESSION HAS ENDED NOTIFICATION
+"timed_sess_end_1" = "定時工作階段已結束";
+"timed_sess_end_2" = "工作階段持續時間已過";
+
+// ----- DISPLAY SLEEP TOGGLED VIA HOTKEY
+"disp_sleep_toggled" = "顯示器睡眠已切換";
+"disp_sleep_toggle_allow" = "允許顯示器睡眠";
+"disp_sleep_toggle_prevent" = "不允許顯示器睡眠";
+"disp_sleep_toggle_fail" = "未切換顯示器睡眠";
+
+// ----- SCREEN SAVER TOGGLED VIA HOTKEY
+"scrn_svr_toggled" = "螢幕保護程式已切換";
+"scrn_svr_toggle_allow" = "允許螢幕保護程式";
+"scrn_svr_toggle_prevent" = "不允許螢幕保護程式";
+"scrn_svr_toggle_fail" = "未切換螢幕保護程式";
+
+// ----- TRIGGER ERROR MESSAGES
+"trig_err_title" = "糟糕！發生了嚴重的錯誤。";
+
+// SAVE TRIGGER ERRORS
+"trig_err_name" = "•未提供觸發器名稱。\n\n";
+"trig_err_no_criteria" = "•未選取/啟用任何條件。\n\n";
+"trig_err_duplicate" = "•已存在具有此名稱的觸發器。\n\n";
+"trig_err_wifi" = "•Wi-Fi條件已啟用，但網路名稱欄位為空。\n\n";
+"trig_err_ip" = "•IP位址條件已啟用，但IP位址欄位為空。\n\n";
+"trig_err_ip_2" = "•IP位址條件已啟用，但一個或多個位址欄位為空。\n\n";
+"trig_err_vpn" = "•VPN服務條件已啟用，但找不到服務名稱。\n\n";
+"trig_err_dns" = "•DNS伺服器條件已啟用，但找不到伺服器位址。\n\n";
+"trig_err_app" = "•應用程式條件已啟用，但未選取任何應用程式。\n\n";
+"trig_err_sched" = "•排程條件已啟用，但未選取任何日期。\n\n";
+"trig_err_displays" =  "•顯示器條件已啟用，但計數欄位為空。\n\n";
+"trig_err_vol" =  "•卷宗/磁碟機條件已啟用，但未選取任何卷宗或磁碟機。\n\n";
+"trig_err_usb" =  "•USB裝置條件已啟用，但未選取任何裝置。\n\n";
+"trig_err_bluetooth" =  "•藍牙裝置條件已啟用，但未選取任何裝置。\n\n";
+"trig_err_cpu" =  "•CPU使用率條件已啟用，但未輸入任何值。\n\n";
+"trig_err_idle" =  "•閒置時間條件已啟用，但未輸入任何值。\n\n";
+
+// EDIT TRIGGER ERRORS
+"trig_err_cant_edit" = "目前無法編輯觸發器「%@」。"; // PLACEHOLDER IS NAME OF TRIGGER
+"trig_err_vpn_edit" = "與此觸發器搭配使用的VPN服務目前未作用中。\n\n請啟動VPN服務「%@」，然後再試一次。"; // PLACEHOLDER IS NAME OF VPN SERVICE
+"trig_err_vol_edit" = "與此觸發器搭配使用的卷宗/磁碟機目前未掛載。\n\n請掛載「%@」，然後再試一次。"; // PLACEHOLDER IS NAME OF DRIVE/VOLUME
+"trig_err_usb_edit" = "與此觸發器搭配使用的USB裝置目前未連接。\n\n請連接「%@」，然後再試一次。"; // PLACEHOLDER IS NAME OF USB DEVICE
+"trig_err_bluetooth_edit" = "與此觸發器搭配使用的藍牙裝置已不再配對。\n\n請重新配對「%@」，然後再試一次。"; // PLACEHOLDER IS NAME OF BLUETOOTH DEVICE
+"trig_err_audio_edit" = "與此觸發器搭配使用的音訊輸出目前無法使用。\n\n請連接「%@」，然後再試一次。"; // PLACEHOLDER IS NAME OF AUDIO OUTPUT DEVICE
