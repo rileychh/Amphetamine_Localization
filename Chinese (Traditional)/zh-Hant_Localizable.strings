@@ -544,7 +544,7 @@ You should also take care to not remove any '\n' characters. Each '\n' represent
 "pref_gen_lbl_takes_effect_close_win" = "↳關閉所有開啟的視窗後生效";
 
 // PREFERENCES → GENERAL MENU ITEMS
-"pref_gen_mi_quick_start_rightclick" = "點按右鍵(點按ㄗㄨㄛˇ鍵顯示選單)";
+"pref_gen_mi_quick_start_rightclick" = "點按右鍵(點按左鍵顯示選單)";
 "pref_gen_mi_quick_start_leftclick" = "點按左鍵(點按右鍵顯示選單)";
 
 
@@ -557,7 +557,7 @@ You should also take care to not remove any '\n' characters. Each '\n' represent
 "help_message_quick_start_title" = "快速啟動工作階段";
 
 // Body
-"help_message_quick_start_body" = "選擇點按左鍵(也稱為主要按一下)或點按右鍵(也稱為次要按一下)選單列中的Amphetamine圖示時，是顯示Amphetamine的選單還是開始/結束工作階段。";
+"help_message_quick_start_body" = "選擇點按左鍵(也稱為主要點擊)或點按右鍵(也稱為次要點擊)選單列中的Amphetamine圖示時，是顯示Amphetamine的選單還是開始/結束工作階段。";
 
 // ----- PREFERENCES → GENERAL → Launch and Wake Behavior Help Message
 
