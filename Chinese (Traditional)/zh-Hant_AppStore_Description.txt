@@ -1,0 +1,124 @@
+---------------------------------------------------------
+SUBTITLE:
+
+** NOTE: This field has a 30 character limit **
+
+強大的保持喚醒工具
+
+
+---------------------------------------------------------
+KEYWORDS: 
+
+** NOTE: If there are other keywords that would make more sense in the target language, feel free to replace these **
+
+喚醒, 保持喚醒, 防止, 睡眠, 阻止, 顯示器, 電源, 咖啡因, 電池, 排程, 螢幕, 保護程式, 開啟
+
+
+---------------------------------------------------------
+APP STORE PREVIEWS:
+
+** NOTE: The following text appears in the screen shots/previews show in Amphetamine’s Mac App Store listing. Please only translate the text below each PREVIEW section. Please keep each line of text separated. **
+
+
+PREVIEW 1:
+使用 Amphetamine 讓您的 Mac 保持喚醒。
+一鍵快速啟動一個工作階段，或選擇一個持續時間。
+
+PREVIEW 2:
+使用觸發器自動化您的 Mac 何時應該睡眠。
+WiFi、USB 和藍牙、顯示器、磁碟機等等。
+
+PREVIEW 3:
+在您工作時讓您的 Mac 保持喚醒。
+選擇一個應用程式，在它執行時您的 Mac 將不會睡眠。
+
+PREVIEW 4:
+在顯示器關閉時讓您的 Mac 保持喚醒。
+使用可選的鬧鐘，這樣您就不會忘記它處於喚醒狀態。
+
+PREVIEW 5:
+使用您自己的狀態圖像。
+自訂幾乎所有東西，包括通知音效。
+
+PREVIEW 6:
+讓您的磁碟保持運轉並隨時待命。
+Drive Alive 確保您的磁碟不會降速。
+
+
+---------------------------------------------------------
+DESCRIPTION:
+
+歡迎使用 Amphetamine，這是為 macOS 創建過的最棒的保持喚醒應用程式。Amphetamine 可以透過一個超級簡單的開/關切換，或透過易於設定的觸發器，讓您的 Mac 及其顯示器（可選）保持喚醒。Amphetamine 功能極其強大，為有需要的人提供了進階功能，但對於那些不需要所有花俏功能的人來說，它仍然直觀且易於使用。
+
+=== 點擊以讓您的 Mac 保持喚醒 ===
+
+從 Amphetamine 的選單中快速啟動一個保持喚醒的工作階段，讓您的 Mac 保持喚醒。
+
+• 無限期、指定時間長度，或直到指定時間
+• 檔案下載期間
+• 特定應用程式執行期間
+
+在保持喚醒的工作階段期間，選擇允許或阻止：
+
+• 顯示器睡眠
+• 螢幕保護程式啟動
+• 內建顯示器關閉時系統睡眠
+• 自動移動滑鼠游標
+• 鎖定螢幕
+
+=== 進階自動化 ===
+
+建立一個觸發器以自動讓您的 Mac 保持喚醒。
+
+• 連接外部顯示器時
+• Mac 的顯示器正在鏡像輸出時
+• 連接 USB 或藍牙裝置時
+• 特定應用程式執行時
+• 特定應用程式執行且位於最前方時
+• Mac 的電池正在充電和/或電池電量高於一個閾值時
+• Mac 的電源轉換器已連接或斷開時
+• Mac 具有特定 IP 位址時
+• Mac 位於特定 Wi-Fi 網路上時
+• Mac 連接到 Cisco AnyConnect VPN 服務時
+• Mac 正在使用特定 DNS 伺服器時
+• 耳機或其他音訊輸出正在使用時
+• 特定磁碟機或宗卷已掛載時
+• Mac 的 CPU 使用率達到特定閾值時
+• Mac 閒置達到特定閾值時
+
+
+=== 有什麼代價嗎？ ===
+
+沒有代價。Amphetamine 是 100% 免費的。這是我送給您的禮物。盡情享用！
+
+• 無廣告
+• 無應用程式內購買
+• 無需解鎖/無「專業」版本
+• 沒有煩人的提示要求您評論 Amphetamine
+• 沒有其他付費應用程式的連結
+• 無追蹤
+• 無資料收集
+
+
+=== Amphetamine 還能做什麼？ ===
+
+Amphetamine 是為 macOS 創建過的功能最強大、可自訂性最高的保持喚醒工具。其他一些值得注意的功能是：
+
+• 一段時間不活動後鎖定您的 Mac 螢幕
+• 定期移動滑鼠游標
+• 在 MacBook 的顯示器/上蓋關閉時讓其保持喚醒
+• 使用 Drive Alive 讓您的磁碟保持喚醒
+• 支援 AppleScript
+• 使用您自己的選單列圖示
+• 使用您自己的通知音效
+• 在讓您的 Mac 保持喚醒的同時允許顯示器睡眠
+• 允許螢幕保護程式在可自訂的一段不活動時間後執行
+• 選單中可選的工作階段剩餘時間顯示（支援 12/24 小時制）
+• 如果您的 Mac 電池電量低，則自動結束工作階段
+• 支援用於啟動/結束工作階段、啟用/停用顯示器睡眠等的熱鍵
+
+
+=== 系統需求 + 其他詳細資訊 ===
+
+• Amphetamine 需要 macOS 10.11 El Capitan 或更高版本；某些功能需要更高版本的 macOS
+• Amphetamine 支援 Retina 顯示器和 macOS 深色模式。
